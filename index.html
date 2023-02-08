@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- Static Required meta tags (should be same on every page) -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
     <meta name="theme-color" content="#1A73E9" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name="web-author" content="web-author-name" />
@@ -26,24 +28,24 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- Dynamic Meta Tags (Should change for every page) -->
-    <title>ZOYLE | Home</title>
-        <!-- Required meta tags -->
-    <meta name="title" content="ZOYLE" />
+    <title>ZOYLEE | Home</title>
+    <!-- Required meta tags -->
+    <meta name="title" content="ZOYLEE" />
     <meta name="discrption" content="Discrption here" />
     <meta name="keyword" content="Keyword here" />
     <!-- Twitter Meta -->
-    <meta name="twitter:title" content="ZOYLE">
+    <meta name="twitter:title" content="ZOYLEE">
     <meta name="twitter:description" content="Discrption here">
     <meta name="twitter:image" content="assets/img/logo.png">
     <!-- Facebook Meta -->
     <meta property="og:url" content="">
-    <meta property="og:title" content="ZOYLE">
+    <meta property="og:title" content="ZOYLEE">
     <meta property="og:description" content="Discrption here">
     <meta property="og:image" content="assets/img/logo/favicon-32x32.svg">
     <meta property="og:image:secure_url" content="assets/img/logo/favicon-32x32.svg">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.svg" />
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.svg" />
-    <meta name="classification" content="ZOYLE" />
+    <meta name="classification" content="ZOYLEE" />
     <link rel="canonical" href="" />
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -51,25 +53,65 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
-<body class="overflow-hidden">
-    <!-- include Header -->
-    <div include-html="layout/header.html" id="header_file"></div>
-    <!-- Hero Section -->
-    
+<body>
+    <!-- Header Start -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-theme2 navbarhed" aria-label="Fourth navbar example">
+        <div class="container">
+            <a class="navbar-brand logonav" href="index.html"><img src="assets/img/header/logo.svg" alt="logo"></a>
+            <button class="navbar-toggler togglrbtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navcolapse" id="navbarsExample04">
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0 navullist">
+                    <li class="nav-item navitem">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item navitem">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item navitem dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-auto-close="outside">Cart</a>
+                        <ul class="dropdown-menu mt-2">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item navitem" role="presentation">
+                                    <button class="nav-link active" id="pills-zoylee-tab" data-bs-toggle="pill" data-bs-target="#pills-zoylee" type="button" role="tab" aria-controls="pills-zoylee" aria-selected="true">Zoylee</button>
+                                </li>
+                                <li class="nav-item navitem" role="presentation">
+                                    <button class="nav-link" id="pills-zoyleeHome-tab" data-bs-toggle="pill" data-bs-target="#pills-zoyleeHome" type="button" role="tab" aria-controls="pills-zoyleeHome" aria-selected="false">Zoylee At Home</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-zoylee" role="tabpanel" aria-labelledby="pills-zoylee-tab" tabindex="0">No Items</div>
+                                <div class="tab-pane fade" id="pills-zoyleeHome" role="tabpanel" aria-labelledby="pills-zoyleeHome-tab" tabindex="0">No Items</div>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <form role="search" class="d-flex align-items-center">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <div class="loginIcon">
+                        <a class="btn " href="login.html"><img src="assets/img/header/person-fill.svg" alt="icon"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header End -->
+
 
 
 
 
 
     <!-- Include Footer -->
-    <script src="assets/libs/include/jquery-3.6.0.min.js"></script>
-    <!-- <div include-html="layout/footer.html" id="footer_file"></div> -->
     <script src="assets/libs/include/include-html.min.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Owl Crousel Js -->
-    <!-- Custom Js -->
     <script src="assets/js/index.min.js"></script>
-    
+
 </body>
+
 </html>
