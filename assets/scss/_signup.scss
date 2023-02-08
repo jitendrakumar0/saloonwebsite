@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.login {
+    height: calc(100% - 130px);
+    & .chekboxcol{
+        font-size: 14px;
+        text-align: justify;
+        & a{
+            color: #f0a834;
+            text-decoration: none;
+        }
+        & .form-check-input:checked{
+            background-color: #f0a834;
+            border-color: #f0a834;
+        }
+    }
+    & .signinbtn {
+        width: 100%;
+        border-radius: 15px;
+        background-color: #f5a629;
+        color: $theme2;
+        &:hover{
+            background-color: #f0a834;
+        }
+    }
+    & .textfooter{
+        font-size: 15px;
+        
+    }
+    .hedtext{
+        font-size: 22px;
+        font-weight: 900;
+    }
+    & .subheading{
+        font-size: 26px;
+        font-weight: 800;
+    }
+    & .textp{
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width: 767.99px){
+
+}
+@media only screen and (max-width: 575.99px){
+
+    .login {
+        & .chekboxcol{
+            font-size: 14px;
+            text-align: justify;
+            & a{
+                color: #f0a834;
+            }
+            & .form-check-input:checked{
+                background-color: #f0a834;
+                border-color: #f0a834;
+            }
+            & .textleb{
+                font-size: 12px;
+            }
+        }
+        & .signinbtn {
+            width: 100%;
+            border-radius: 15px;
+            background-color: #f5a629;
+            color: $theme2;
+            &:hover{
+                background-color: #f0a834;
+            }
+        }
+        & .textfooter{
+            font-size: 15px;
+            
+        }
+        .hedtext{
+            font-size: 18px;
+            font-weight: 900;
+        }
+        & .subheading{
+            font-size: 22px;
+            font-weight: 800;
+        }
+        & .textp{
+            font-size: 12px;
+        }
+    } 
+}
