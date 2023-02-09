@@ -28,24 +28,24 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- Dynamic Meta Tags (Should change for every page) -->
-    <title>ZOYLEE | Home</title>
+    <title>SALOON | Home</title>
     <!-- Required meta tags -->
-    <meta name="title" content="ZOYLEE" />
+    <meta name="title" content="SALOON" />
     <meta name="discrption" content="Discrption here" />
     <meta name="keyword" content="Keyword here" />
     <!-- Twitter Meta -->
-    <meta name="twitter:title" content="ZOYLEE">
+    <meta name="twitter:title" content="SALOON">
     <meta name="twitter:description" content="Discrption here">
     <meta name="twitter:image" content="assets/img/logo.png">
     <!-- Facebook Meta -->
     <meta property="og:url" content="">
-    <meta property="og:title" content="ZOYLEE">
+    <meta property="og:title" content="SALOON">
     <meta property="og:description" content="Discrption here">
     <meta property="og:image" content="assets/img/logo/favicon-32x32.svg">
     <meta property="og:image:secure_url" content="assets/img/logo/favicon-32x32.svg">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.svg" />
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.svg" />
-    <meta name="classification" content="ZOYLEE" />
+    <meta name="classification" content="SALOON" />
     <link rel="canonical" href="" />
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -53,47 +53,56 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
-<body>
+<body class="overflow-hideen bg-dark">
     <!-- Header Start -->
     <nav class="navbar navbar-expand-md navbar-dark bg-theme2 navbarhed" aria-label="Fourth navbar example">
         <div class="container">
             <a class="navbar-brand logonav" href="index.html"><img src="assets/img/header/logo.svg" alt="logo"></a>
-            <button class="navbar-toggler togglrbtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler togglrbtn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse navcolapse" id="navbarsExample04">
                 <ul class="navbar-nav mx-auto mb-2 mb-md-0 navullist">
                     <li class="nav-item navitem">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link navlink active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item navitem">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link navlink" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item navitem dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown"
+                        <a class="nav-link navlink dropdown-toggle droptoglee" href="#" data-bs-toggle="dropdown"
                             aria-expanded="false" data-bs-auto-close="outside">Cart</a>
-                        <ul class="dropdown-menu mt-2">
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item navitem" role="presentation">
-                                    <button class="nav-link active" id="pills-zoylee-tab" data-bs-toggle="pill" data-bs-target="#pills-zoylee" type="button" role="tab" aria-controls="pills-zoylee" aria-selected="true">Zoylee</button>
+                        <ul class="dropdown-menu mt-2 dropDown dropdown2 mt-3 z-2">
+                            <ul class="nav nav-pills mb-3 navPill " id="pills-tab" role="tablist">
+                                <li class="nav-item naviteminner" role="presentation">
+                                    <button class="nav-link active navlinkinner" id="pills-zoylee-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-zoylee" type="button" role="tab"
+                                        aria-controls="pills-zoylee" aria-selected="true">Zoylee</button>
                                 </li>
-                                <li class="nav-item navitem" role="presentation">
-                                    <button class="nav-link" id="pills-zoyleeHome-tab" data-bs-toggle="pill" data-bs-target="#pills-zoyleeHome" type="button" role="tab" aria-controls="pills-zoyleeHome" aria-selected="false">Zoylee At Home</button>
+                                <li class="nav-item naviteminner" role="presentation">
+                                    <button class="nav-link navlinkinner" id="pills-zoyleeHome-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-zoyleeHome" type="button"
+                                        role="tab" aria-controls="pills-zoyleeHome" aria-selected="false">Zoylee At
+                                        Home</button>
                                 </li>
                             </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-zoylee" role="tabpanel" aria-labelledby="pills-zoylee-tab" tabindex="0">No Items</div>
-                                <div class="tab-pane fade" id="pills-zoyleeHome" role="tabpanel" aria-labelledby="pills-zoyleeHome-tab" tabindex="0">No Items</div>
+                            <div class="tab-content tabContent" id="pills-tabContent">
+                                <div class="tab-pane tabpane fade show active" id="pills-zoylee" role="tabpanel"
+                                    aria-labelledby="pills-zoylee-tab" tabindex="0">No Items</div>
+                                <div class="tab-pane tabpane fade" id="pills-zoyleeHome" role="tabpanel"
+                                    aria-labelledby="pills-zoyleeHome-tab" tabindex="0">No Items</div>
                             </div>
                         </ul>
                     </li>
                 </ul>
-                <form role="search" class="d-flex align-items-center">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <form role="search" class="d-flex align-items-center searchsection">
+                    <input class="form-control searchinput" type="search" placeholder="Search" aria-label="Search">
                     <div class="loginIcon">
-                        <a class="btn " href="login.html"><img src="assets/img/header/person-fill.svg" alt="icon"></a>
+                        <a class="btn btnlogin" href="login.html"><img src="assets/img/header/person-fill.svg"
+                                alt="icon"></a>
                     </div>
                 </form>
             </div>
@@ -101,12 +110,536 @@
     </nav>
     <!-- Header End -->
 
+    <!-- Hero Section -->
+    <section class="container-fluid heroSection position-relative px-0">
+        <div class="bannervideo position-relative">
+            <video class="standard w-100" autoplay="" muted="" loop=""
+                src="https://www.zoylee.com/assets/video/home-video/banner-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- <video class="phone" autoplay="" muted="" loop=""
+                src="https://www.zoylee.com/assets/banner-video-mobile/banner-video-mobile.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+        </div>
+        <div class="container h-100 position-absolute  z-1 maincontainerleft">
+            <div class="row h-100">
+                <div class="col-6 d-flex  justify-content-center flex-column leftSidecontent">
+                    <div class="row mx-0 cardsectionhero">
+                        <div class="card mb-3 px-0 rounded-3 incard border-0">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body bodycard">
+                                        <h5 class="card-title headingcard">Home-Based Hair and Beauty Appointment</h5>
+                                        <p class="card-text textperograph">Choose from a wide range of service for both
+                                            male and female that you can get at your comfort zone</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="assets/img/index/home-based.webp" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 px-0 rounded-3 incard border-0">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body bodycard">
+                                        <h5 class="card-title headingcard">Find top-rated salons, Spas, and Parlours
+                                            Around You</h5>
+                                        <p class="card-text textperograph">Choose from a wide range of service for both
+                                            male and female that you can get at your comfort zone</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="assets/img/index/salon.webp" class="img-fluid rounded-start" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex  justify-content-center flex-column leftSidecontent">
+                    <div class="heading mb-2">Get Appointment for</div>
+                    <div class="heading heading2 mb-2"> Nearby Beauty Services</div>
+                    <p class="perograph">Looking for the best beauty and spa services in town? Our team of experienced
+                        beauticians offers all the beauty services you’ve been waiting for.</p>
+                    <div class="text-end mt-3 contactbtn px-0">
+                        <a class="btn  buttoncontact py-2" href="#">Contact US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- cardSection -->
+    <section class="container-fluid cardSection py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading text-end pb-5">Curated Offers</div>
+                </div>
+                <div class="col-3">
+                    <div class="card h-100 cardmain rounded-3 border-0">
+                        <div class="card-image">
+                            <img class="rounded-3 w-100" src="assets/img/index/image1card.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card h-100 cardmain rounded-3 border-0">
+                        <div class="card-image">
+                            <img class="rounded-3 w-100" src="assets/img/index/image2card.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card h-100 cardmain rounded-3 border-0">
+                        <div class="card-image">
+                            <img class="rounded-3 w-100" src="assets/img/index/image3card.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card h-100 cardmain rounded-3 border-0">
+                        <div class="card-image">
+                            <img class=" rounded-3 w-100" src="assets/img/index/image4card.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cardSectionEnd -->
+
+    <!-- BUSINESS Section Start -->
+    <section class="container-fluid businesscard py-4">
+        <div class="container bg-dark rounded-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tabsection">
+                        <ul class="nav nav-pills mb-3 d-flex align-items-center justify-content-between navPill" id="pills-tab" role="tablist">
+                            <div class="d-flex align-items-center navitem">
+                                <li class="nav-item innernav" role="presentation">
+                                    <button class="nav-link active navlink" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">For Salons</button>
+                                </li>
+                                <li class="nav-item innernav" role="presentation">
+                                    <button class="nav-link navlink" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">For Artists</button>
+                                </li>
+                            </div>
+                            <div class="headingsection">
+                                <div class="heading mb-3 text-end">SALOON</div>
+                            <div class="subHeading text-end">BUSINESS</div>
+                            </div>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="card mb-3 maincard border-0 rounded-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-6 imagecolleft">
+                                            <img class="w-100 h-100 rounded-3" src="assets/img/index/bussine1.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-6 d-flex align-items-center colRight">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-3">Get Registered with Sallon</h5>
+                                                <p class="card-text mb-3">Begin using Sallon to improve the way you operate your business. All-in-one application for you and your clients. Kindly click on.</p>
+                                                <a class="btn buttoncustom" href="">Boost My Bussines</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                <div class="card mb-3 maincard border-0 rounded-3">
+                                    <div class="row g-0">
+                                        <div class="col-md-7 imagecolleft">
+                                            <img class="w-100 h-100 rounded-3" src="assets/img/index/bussine2.png" class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-md-5 d-flex align-items-cente colRight">
+                                            <div class="card-body flex-column d-flex align-items-start justify-content-center">
+                                                <div class="headingcard">Sign up with Sallon</div>
+                                                <p class="card-perograph">Begin using Sallon to improve the way you operate your business. All-in-one application for you and your clients. Kindly click on</p>
+                                                <form action="">
+                                                    <div class="row mx-0 formsection">
+                                                        <div class="col-12 mb-3 px-0">
+                                                            <input type="text" class="form-control border-0 border-bottom rounded-0 shadow-none" id="exampleFormControlname" name="name" placeholder="Name" required>
+                                                        </div>
+                                                        <div class="col-12 mb-3 px-0">
+                                                            <input type="tel" class="form-control border-0 border-bottom rounded-0 shadow-none" name="phone" id="exampleFormControlnumber" placeholder="Mobile(+91)" required>
+                                                        </div>
+                                                        <div class="col-12 mb-3 px-0">
+                                                            <input type="email" class="form-control border-0 border-bottom rounded-0 shadow-none" name="email" id="exampleFormControlemail" placeholder="Email (optional)" required>
+                                                        </div>
+                                                        <div class="col-12 mb-3 px-0">
+                                                            <input type="text" class="form-control border-0 border-bottom rounded-0 shadow-none" name="address" id="exampleFormControlloection" placeholder="Your Location" required>
+                                                        </div>
+                                                    </div>
+                                                    <a class="btn buttoncustom" href="">Submit</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BUSINESS Section End -->
+
+    <!-- Why Choose Saloon Start ? -->
+    <div class="container-fluid whyChooseSection py-4 px-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading pb-4 mt-3 text-end">Why Choose Saloon ?</div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card maincardchosse h-100 border-theme1">
+                        <div class="card-body">
+                            <div class="imagecard">
+                                <img src="assets/img/index/icon1.svg" alt="icon1">
+                            </div>
+                            <div class="card-title">
+                                Find Salons and Spas 
+                            </div>
+                            <div class="card-text">
+                                Discover the widest selection of salons, parlours and spas in and around your area
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card maincardchosse h-100 border-theme1">
+                        <div class="card-body">
+                            <div class="imagecard">
+                                <img src="assets/img/index/icon2.svg" alt="icon2">
+                            </div>
+                            <div class="card-title">
+                                Online Appointments
+                            </div>
+                            <div class="card-text">
+                                Select your preferred time slot and book appointments online with just a tap or two.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card maincardchosse h-100 border-theme1">
+                        <div class="card-body">
+                            <div class="imagecard">
+                                <img src="assets/img/index/icon3.svg" alt="icon3">
+                            </div>
+                            <div class="card-title">
+                                Compare Prices
+                            </div>
+                            <div class="card-text">
+                                Evaluate different outlets, their services and prices and pick the one that fits your needs.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card maincardchosse h-100 border-theme1">
+                        <div class="card-body">
+                            <div class="imagecard">
+                                <img src="assets/img/index/icon4.svg" alt="icon4">
+                            </div>
+                            <div class="card-title">
+                                Zero Waiting Time
+                            </div>
+                            <div class="card-text">
+                                No more waiting in the queues. Turn up to the venue at your selected time and enjoy.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid sectionreating py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="leftSideimage h-100 ">
+                        <img class="w-100 h-100 rounded-3" src="assets/img/index/reatigimage.png" alt="imagereating">
+                    </div>
+                </div>
+                <div class="col-md-5 rightside">
+                    <div class="h-100">
+                        <div class="headingreating mb-4">Hair, Beauty and Grooming Services at Your Convenience</div>
+                    <div class="perograph mb-4">Say hello to Zoylee, India's first online salon booking app that has been designed to help you find salons, spas, and parlours near you as well as home-based hair and beauty services, book appointments instantly, and enjoy ZERO WAITING TIME. Whether you are looking for a stylish new haircut, hair spa, facial, waxing and hair removal, Bridal makeup, or last-minute nails or want to treat yourself to a soothing body spa, Zoylee happens to be your go-to online salon booking platform.</div>
+                    <div class="card mb-3 maincard border-0">
+                        <div class="row g-0">
+                            <div class="col-md-4 leftside d-flex align-items-center justify-content-center">
+                                <div class="rettingHeadingsection d-flex">
+                                    <div class="reating">4.6</div> 
+                                    <span class="outufreating">out of 27</span>
+                                </div>
+                            </div>
+                            <div class="col-md-8 rightSide">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="ratetext">5</div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="ratetext">4</div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="0" style="width: 60%" aria-valuemin="60" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="ratetext">3</div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="0" style="width: 40%" aria-valuemin="40" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="ratetext">2</div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="0" style="width: 25%" aria-valuemin="25" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="ratetext">1</div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="0" style="width: 10%" aria-valuemin="10" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttonreating py-3 px-3">
+                                <a href="" class="btn buttoncustom ">View All Reviews</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Saloon End ? -->
+
+<!-- herewe we Section start -->
+<section class="container-fluid wherWeSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="heading py-3">Where We Are</div>
+            </div>
+            <div class="col-12">
+                <ul class="where-we-list">
+                    <li><a href="#">Greater Noida West</a></li>
+                    <li><a href="#">Greater Noida</a></li>
+                    <li><a href="#">Faridabad</a></li>
+                    <li><a href="#">Delhi</a></li>
+                    <li><a href="#">Ghaziabad</a></li>
+                    <li><a href="#">Lucknow</a></li>
+                    <li><a href="#">Meerut</a></li>
+                    <li><a href="#">Agra</a></li>
+                    <li><a href="#">Chandigarh</a></li>
+                    <li><a href="#">Mohali</a></li>
+                    <li><a href="#">Zirakpur</a></li>
+                    <li><a href="#">Jalandhar City</a></li>
+                    <li><a href="#">Aligarh</a></li>
+                    <li><a href="#">Jaipur</a></li>
+                    <li><a href="#">Pune</a></li>
+                    <li><a href="#">Bhopal</a></li>
+                    <li><a href="#">Ludhiana</a></li>
+                    <li><a href="#">Khair</a></li>
+                    <li><a href="#">Panchkula</a></li>
+                    <li><a href="#">Gorakhpur</a></li>
+                    <li><a href="#">Daman</a></li>
+                    <li><a href="#">Haridwar</a></li>
+                    <li><a href="#">Roorkee</a></li>
+                    <li><a href="#">Dehradun</a></li>
+                    <li><a href="#">Kanpur</a></li>
+                    <li><a href="#">Unnao</a></li>
+                    <li><a href="#">Karnal</a></li>
+                    <li><a href="#">Kurukshetra</a></li>
+                    <li><a href="#">Panipat</a></li>
+                    <li><a href="#">Amritsar</a></li>
+                    <li><a href="#">Kota</a></li>
+                    <li><a href="#">Gurugram</a></li>
+                    <li><a href="#">Noida</a></li>
+                </ul>
+                <div class="tabswhere py-3">
+                    <ul class="nav nav-pills mb-3 pillcontent" id="pills-tab" role="tablist">
+                        <li class="nav-item navitem" role="presentation">
+                            <button class="nav-link navLink active" id="pills-saloon-tab" data-bs-toggle="pill" data-bs-target="#pills-saloon" type="button" role="tab" aria-controls="pills-saloon" aria-selected="true">Saloon</button>
+                        </li>
+                        <li class="nav-item navitem" role="presentation">
+                            <button class="nav-link navLink" id="pills-parlour-tab" data-bs-toggle="pill" data-bs-target="#pills-parlour" type="button" role="tab" aria-controls="pills-parlour" aria-selected="false">Parlour</button>
+                        </li>
+                        <li class="nav-item navitem" role="presentation">
+                            <button class="nav-link navLink" id="pills-spa-tab" data-bs-toggle="pill" data-bs-target="#pills-spa" type="button" role="tab" aria-controls="pills-spa" aria-selected="false">Spa</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-saloon" role="tabpanel" aria-labelledby="pills-saloon-tab" tabindex="0">
+                            <div>
+                                <ul class="where-we-list category_list">
+                                    <li><a href="3">Salon in Greater Noida West</a></li>
+                                    <li><a href="3">Salon in Greater Noida</a></li>
+                                    <li><a href="3">Salon in Faridabad</a></li>
+                                    <li><a href="3">Salon in Delhi</a></li>
+                                    <li><a href="3">Salon in Ghaziabad</a></li>
+                                    <li><a href="#">Salon in Lucknow</a></li>
+                                    <li><a href="#">Salon in Meerut</a></li>
+                                    <li><a href="#">Salon in Agra</a></li>
+                                    <li><a href="#">Salon in Chandigarh</a></li>
+                                    <li><a href="#">Salon in Mohali</a></li>
+                                    <li><a href="#">Salon in Jalandhar City</a></li>
+                                    <li><a href="#">Salon in Aligarh</a></li>
+                                    <li><a href="#">Salon in Jaipur</a></li>
+                                    <li><a href="#">Salon in Pune</a></li>
+                                    <li><a href="#">Salon in Bhopal</a></li>
+                                    <li><a href="#">Salon in Ludhiana</a></li>
+                                    <li><a href="#">Salon in Khair</a></li>
+                                    <li><a href="#">Salon in Panchkula</a></li>
+                                    <li><a href="#">Salon in Gorakhpur</a></li>
+                                    <li><a href="#">Salon in Daman</a></li>
+                                    <li><a href="#">Salon in Haridwar</a></li>
+                                    <li><a href="#">Salon in Roorkee</a></li>
+                                    <li><a href="#">Salon in Dehradun</a></li>
+                                    <li><a href="#">Salon in Kanpur</a></li>
+                                    <li><a href="#">Salon in Unnao</a></li>
+                                    <li><a href="#">Salon in Karnal</a></li>
+                                    <li><a href="#">Salon in Kurukshetra</a></li>
+                                    <li><a href="#">Salon in Panipat</a></li>
+                                    <li><a href="#">Salon in Amritsar</a></li>
+                                    <li><a href="#">Salon in Kota</a></li>
+                                    <li><a href="#">Salon in Gurugram</a></li>
+                                    <li><a href="#">Salon in Noida</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-parlour" role="tabpanel" aria-labelledby="pills-parlour-tab" tabindex="0">
+                            <div>
+                                <ul class="where-we-list category_list">
+                                    <li><a href="#">Parlour in Greater Noida West</a></li>
+                                    <li><a href="#">Parlour in Greater Noida</a></li>
+                                    <li><a href="#">Parlour in Faridabad</a></li>
+                                    <li><a href="#i">Parlour in Delhi</a></li>
+                                    <li><a href="#">Parlour in Ghaziabad</a></li>
+                                    <li><a href="#">Parlour in Lucknow</a></li>
+                                    <li><a href="#">Parlour in Meerut</a></li>
+                                    <li><a href="#">Parlour in Agra</a></li>
+                                    <li><a href="#">Parlour in Chandigarh</a></li>
+                                    <li><a href="#">Parlour in Mohali</a></li>
+                                    <li><a href="#">Parlour in Zirakpur</a></li>
+                                    <li><a href="#">Parlour in Jalandhar City</a></li>
+                                    <li><a href="#">Parlour in Aligarh</a></li>
+                                    <li><a href="#">Parlour in Jaipur</a></li>
+                                    <li><a href="#">Parlour in Pune</a></li>
+                                    <li><a href="#">Parlour in Bhopal</a></li>
+                                    <li><a href="#">Parlour in Ludhiana</a></li>
+                                    <li><a href="#">Parlour in Daman</a></li>
+                                    <li><a href="#">Parlour in Haridwar</a></li>
+                                    <li><a href="#">Parlour in Roorkee</a></li>
+                                    <li><a href="#">Parlour in Dehradun</a></li>
+                                    <li><a href="#">Parlour in Kanpur</a></li>
+                                    <li><a href="#">Parlour in Unnao</a></li>
+                                    <li><a href="#">Parlour in Karnal</a></li>
+                                    <li><a href="#">Parlour in Kurukshetra</a></li>
+                                    <li><a href="#">Parlour in Panipat</a></li>
+                                    <li><a href="#">Parlour in Amritsar</a></li>
+                                    <li><a href="#">Parlour in Kota</a></li>
+                                    <li><a href="#">Parlour in Gurugram</a></li>
+                                    <li><a href="#">Parlour in Noida</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-spa" role="tabpanel" aria-labelledby="pills-spa-tab" tabindex="0">
+                            <div>
+                                <ul class="where-we-list category_list">
+                                    <li><a href="#">Spa in Greater Noida</a></li>
+                                    <li><a href="#">Spa in Faridabad</a></li>
+                                    <li><a href="#">Spa in Delhi</a></li>
+                                    <li><a href="#">Spa in Ghaziabad</a></li>
+                                    <li><a href="#">Spa in Lucknow</a></li>
+                                    <li><a href="#">Spa in Chandigarh</a></li>
+                                    <li><a href="#">Spa in Mohali</a></li>
+                                    <li><a href="#">Spa in Zirakpur</a></li>
+                                    <li><a href="#">Spa in Jalandhar City</a></li>
+                                    <li><a href="#">Spa in Jaipur</a></li>
+                                    <li><a href="#">Spa in Pune</a></li>
+                                    <li><a href="#">Spa in Ludhiana</a></li>
+                                    <li><a href="#">Spa in Daman</a></li>
+                                    <li><a href="#">Spa in Roorkee</a></li>
+                                    <li><a href="#">Spa in Dehradun</a></li>
+                                    <li><a href="#">Spa in Gurugram</a></li>
+                                    <li><a href="#">Spa in Noida</a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- herewe we Section end -->
 
 
 
+<!-- Footer Start -->
+<footer class="container-fluid footer pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 columnfirst">
+                <ul class="list-unstyled list1 d-flex align-items-cente justify-content-center gap-3 flex-column">
+                    <li><a class="text-decoration-none text-white" href="">About Us</a></li>
+                    <li><a class="text-decoration-none text-white" href="">Contact Us</a></li>
+                    <li><a class="text-decoration-none text-white" href="">Blog</a></li>
+                    <li><a class="text-decoration-none text-white" href="">Saloon Safety Program</a></li>
+                    <li><a class="text-decoration-none text-white" href="">Artist Signup</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 columnfirst">
+                <ul class="list-unstyled list1 d-flex align-items-cente justify-content-center gap-3 flex-column">
+                    <li><a class="text-decoration-none text-white" href="">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-white" href="">Cancellation and Refund</a></li>
+                    <li><a class="text-decoration-none text-white" href="">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-white" href="">Cookie Policy</a></li>
+                    <li><a class="text-decoration-none text-white" href="">FAQs</a></li>
+                </ul>
+                <ul class="list-unstyled d-flex iconlist">
+                    <li><a class="imagefb" href=""><img src="assets/img/footer/FB.png" alt="Facebook"></a></li>
+                    <li><a class="imageinsta" href=""><img src="assets/img/footer/insta.png" alt="instagram"></a></li>
+                    <li><a class="imagetwit" href=""><img src="assets/img/footer/Twtr.png" alt="twitter"></a></li>
+                    <li><a class="imageyt" href=""><img src="assets/img/footer/YT.png" alt="youtube"></a></li>
+                    <li><a class="imagelink" href=""><img src="assets/img/footer/linkedin.png" alt="linkedin"></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 columnfirst">
+                <ul class="list-unstyled list1  d-flex align-items-cente justify-content-center gap-3 flex-column">
+                    <li><a class="text-decoration-none text-white" href="#">Haircut</a></li>
+                    <li><a class="text-decoration-none text-white" href="#">Nail Polish</a></li>
+                    <li><a class="text-decoration-none text-white" href="#">Body Massage</a></li>
+                    <li><a class="text-decoration-none text-white" href="#">Face Massage</a></li>
+                </ul>
+                <div class="d-flex appiconsection">
+                    <ul class="list-unstyled d-flex gap-2">
+                        <li><a href=""><img class="w-100 h-100" src="assets/img/footer/gplay.svg" alt=""></a></li>
+                        <li><a href=""><img class="w-100 h-100" src="assets/img/footer/Appstore.svg" alt=""></a></li>
 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Include Footer -->
+</footer>
+<!-- Footer End -->
+
     <script src="assets/libs/include/include-html.min.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

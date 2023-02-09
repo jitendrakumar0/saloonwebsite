@@ -28,24 +28,24 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- Dynamic Meta Tags (Should change for every page) -->
-    <title>ZOYLEE | SIGN UP</title>
+    <title>SALOON | SIGN UP</title>
     <!-- Required meta tags -->
-    <meta name="title" content="ZOYLEE" />
+    <meta name="title" content="SALOON" />
     <meta name="discrption" content="Discrption here" />
     <meta name="keyword" content="Keyword here" />
     <!-- Twitter Meta -->
-    <meta name="twitter:title" content="ZOYLEE">
+    <meta name="twitter:title" content="SALOON">
     <meta name="twitter:description" content="Discrption here">
     <meta name="twitter:image" content="assets/img/logo.png">
     <!-- Facebook Meta -->
     <meta property="og:url" content="">
-    <meta property="og:title" content="ZOYLEE">
+    <meta property="og:title" content="SALOON">
     <meta property="og:description" content="Discrption here">
     <meta property="og:image" content="assets/img/logo/favicon-32x32.svg">
     <meta property="og:image:secure_url" content="assets/img/logo/favicon-32x32.svg">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.svg" />
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.svg" />
-    <meta name="classification" content="ZOYLEE" />
+    <meta name="classification" content="SALOON" />
     <link rel="canonical" href="" />
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -59,17 +59,30 @@
         <div class="login2 h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-md-5 col-12  order-md-1 order-2 h-100 d-flex flex-column justify-content-center mt-5 px-5">
-                    <div class="d-flex align-items-center hedtext mb-4"><span class="pe-2"><img src="assets/img/signin/iconimage.png" alt=""></span>Zoylee</div>
+                    <div class="d-flex align-items-center hedtext mb-4"><span class="pe-2"><img src="assets/img/signin/iconimage.png" alt=""></span>Saloon</div>
                     <div class="h3 text-theme1 mb-4 subheading">Create an account</div>
                     <div class=" text-theme2 mb-4 textp">Let's get started with your 30 day free trail.</div>
                     <form action="">
                         <div class="mb-4">
-                            <input type="text" class="form-control border-bottom shadow-none border-0"
-                                id="formGroupExampleInput1" placeholder="Name" Required>
+                            <input type="text" class="form-control border-bottom shadow-none border-0"id="formGroupExampleInput1" placeholder="Name" Required>
                         </div>
                         <div class="mb-4">
-                            <input type="tel" class="form-control border-bottom shadow-none border-0"
-                                id="formGroupExampleInput2" placeholder="Phone" Required>
+                            <input type="tel" class="form-control border-bottom shadow-none border-0" id="formGroupExampleInput2" placeholder="Phone" Required>
+                            <div class="input-group signup-OTPSection justify-content-center py-3">
+                                <div class="">
+                                    <div id="divOuter" class="outerdiv">
+                                        <div class="divinner" id="divInner">
+                                            <input id="signup-partitioned" type="text" class="number outline-none signuo-partitioned" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <div class="input-group-prepend form-control-test mt-3">
+                                        <div class="input-group-text bg-transparent border-0  p-0">
+                                            <button class="btn btn-link signup-partitioned-btn font-12 text-decoration-none px-0 text-theme1" type="button">Verify OTP</button>
+                                            <button class="btn btn-link signup-phone-btn signup-resendOTP font-12 text-decoration-none text-theme1" type="button">Resend OTP</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="mb-4">
                             <input type="email" class="form-control border-bottom shadow-none border-0"

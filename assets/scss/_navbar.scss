@@ -1,14 +1,92 @@
-.navbarhed{
-    & .logonav{
+.navbarhed {
+z-index: 99;
+    & .logonav {
+        height: 40px;
 
+        & img {
+            width: 100%;
+            height: 100%;
+        }
     }
-    & .togglrbtn{
 
-    }
-    & .navcolapse{
-        & .navullist{
-            & .navitem{
+    & .togglrbtn {}
 
+    & .navcolapse {
+        & .navullist {
+            & .navitem {
+
+                & .navlink {
+                    padding: 10px 15px;
+                    position: relative;
+
+                    &.droptoglee {
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {}
+                }
+
+                & .dropdown2 {
+                    min-width: 400px;
+                    width: 400px;
+                    padding: 10px;
+
+                    & .navPill {
+                        justify-content: space-around;
+
+                        & .naviteminner {
+                            width: 50%;
+
+                            & .navlinkinner {
+                                width: 100%;
+                                color: black;
+                                font-size: 14px;
+                                font-weight: 600;
+                                border: 1px solid $theme1 !important;
+                                margin: 0 0;
+
+                                &.active {
+                                    background-color: $theme1;
+                                    color: white;
+                                }
+
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    & .navlink{
+                        color: $theme1;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            right: 0;
+                            width: 0%;
+                            height: 2px;
+                            background-color: #fff;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .searchsection {
+            & .searchinput {
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                    border-color: $theme1;
+                }
+            }
+
+            & .loginIcon {
+                & .btnlogin {
+                    & img {}
+                }
             }
         }
     }
