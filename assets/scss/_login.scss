@@ -2,6 +2,7 @@
 
 .login {
     height: calc(100% - 130px);
+
     & .chekboxcol {
         font-size: 14px;
         text-align: justify;
@@ -47,14 +48,62 @@
         font-size: 15px;
     }
 
+    & .optsection {
+        & .inputs {
+            & .formotp {
+                width: 40px;
+                height: 40px;
+                border-color: $theme1;
+                box-shadow: none;
+
+                &:focus-visible {
+                    color: $theme1;
+                    border-color: $theme1;
+                    outline: none;
+                }
+            }
+        }
+
+        & .recendtext {
+            font-size: 14px;
+            font-weight: 500;
+            color: $theme2;
+        }
+
+        & .or-border {
+            border-bottom: 1px solid $theme1;
+
+            & span {
+                background: #fefefe;
+                padding: 1px 6px 5px 5px;
+                border-radius: 25px;
+                font-size: 14px;
+                position: absolute;
+                top: -10px;
+                display: flex;
+                align-items: center;
+                right: 45%;
+            }
+        }
+    }
+
+    & .recendtext {
+        font-size: 14px;
+        font-weight: 500;
+        color: $theme2;
+    }
+
+    & .textresend {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
 }
 
-@media only screen and (max-width: 767.99px) {
-
-}
+@media only screen and (max-width: 767.99px) {}
 
 @media only screen and (max-width: 575.99px) {
-    
+
 
     .login {
         & .chekboxcol {
