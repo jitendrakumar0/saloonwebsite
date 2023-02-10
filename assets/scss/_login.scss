@@ -55,6 +55,7 @@
                 height: 40px;
                 border-color: $theme1;
                 box-shadow: none;
+                aspect-ratio: 2/2;
 
                 &:focus-visible {
                     color: $theme1;
@@ -91,6 +92,7 @@
         font-size: 14px;
         font-weight: 500;
         color: $theme2;
+        background: none;
     }
 
     & .textresend {
@@ -103,8 +105,6 @@
 @media only screen and (max-width: 767.99px) {}
 
 @media only screen and (max-width: 575.99px) {
-
-
     .login {
         & .chekboxcol {
             font-size: 14px;
@@ -152,6 +152,21 @@
 
         & .textp {
             font-size: 12px;
+        }
+        .leftsidesection {
+            // padding: 0px 70px;
+            // margin: 0px 70px;
+        }
+        & .recendtext {
+            font-size: 14px;
+            font-weight: 500;
+            color: $theme2;
+            background: none;
+        }
+    
+        & .textresend {
+            font-size: 14px;
+            font-weight: 500;
         }
     }
 }
