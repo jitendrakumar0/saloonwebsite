@@ -93,6 +93,10 @@
 
             }
         }
+        & .innerrowP{
+            position: sticky;
+            top: 70px;
+        }
     }
 
     & .rightSection {
