@@ -93,7 +93,8 @@
 
             }
         }
-        & .innerrowP{
+
+        & .innerrowP {
             position: sticky;
             top: 70px;
         }
@@ -136,41 +137,46 @@
 
                                 & .rightSide {
                                     & .bodycard {
-                                        & .body-Header{
+                                        & .body-Header {
                                             border-bottom: 1px solid gray;
 
-                                            & .orderid{
+                                            & .orderid {
                                                 font-size: 13px;
                                                 font-weight: 600;
 
                                             }
-                                            & .panding{
+
+                                            & .panding {
                                                 font-size: 13px;
                                                 font-weight: 600;
                                             }
                                         }
-                                        & .cardHeading{
+
+                                        & .cardHeading {
                                             font-size: 17px;
                                             font-weight: 600;
                                             color: $theme1;
                                         }
-                                        & .dateText{
+
+                                        & .dateText {
                                             font-size: 14PX;
                                             font-weight: 400;
                                             color: gray;
                                         }
-                                        & .paymentItems{
-                                            & .card-text{
-                                            font-size: 15PX;
-                                            font-weight: 400;
-                                            color: $black;
+
+                                        & .paymentItems {
+                                            & .card-text {
+                                                font-size: 15PX;
+                                                font-weight: 400;
+                                                color: $black;
                                             }
-                                            & .itemsbtn{
+
+                                            & .itemsbtn {
                                                 font-size: 15PX;
                                                 font-weight: 400;
                                                 background-color: $theme1;
                                             }
-                                            
+
                                         }
                                     }
                                 }
@@ -551,6 +557,106 @@
     }
 }
 
+.bookingmodal {
+    & .modal-content {
+        & .modal-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: $black;
+
+            & span {
+                width: 15px;
+                height: 15px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                & img {}
+            }
+        }
+
+        & .buttonprnding {
+            font-size: 16px;
+            font-weight: 500;
+            color: $theme1;
+
+            & span {
+                width: 20px;
+                height: 20px;
+                align-items: baseline;
+                display: flex;
+            }
+        }
+    }
+
+    & .modal-body {
+        & .card {
+            & .card-image {
+                position: relative;
+
+                & img {}
+
+                & .saloontext {
+                    position: absolute;
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: $white;
+                    bottom: 10px;
+                    left: 10px;
+                }
+            }
+
+            & .card-body {
+                & .icontext {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $black;
+
+                    & span {
+                        display: flex;
+                        width: 20px;
+                        height: 20px;
+                        align-content: baseline;
+                    }
+                }
+
+                & .addarestext {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $black;
+
+                    & span {
+                        display: flex;
+                        width: 20px;
+                        height: 20px;
+                        align-content: baseline;
+                    }
+                }
+            }
+
+            & .bottomfooter {
+                min-height: 200px;
+                overflow-y: auto;
+                height: 200px;
+                border-radius: 10px;
+
+                & .Servicestext {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+            & .footercard{
+                border-radius: 0 0 10px 10px;
+                & .offertext{
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+
+        }
+    }
+}
+
 
 @media only screen and (max-width: 767.99px) {}
 
@@ -618,7 +724,7 @@
                                     color: $black;
                                     font-size: 14px;
                                     font-weight: 600;
-    
+
                                     &.active {
                                         background-color: $theme1;
                                         color: $white;
@@ -626,7 +732,7 @@
                                 }
                             }
                         }
-    
+
                         & .innertabContent {
                             & .tabInnerRow {
                                 & .myBookingCard {
@@ -637,34 +743,39 @@
                                             }
                                         }
                                     }
-    
+
                                     & .rightSide {
                                         & .bodycard {
-                                            & .body-Header{
+                                            & .body-Header {
                                                 border-bottom: 1px solid gray;
-    
-                                                & .orderid{
+
+                                                & .orderid {
                                                     font-size: 11px;
-    
+
                                                 }
-                                                & .panding{
+
+                                                & .panding {
                                                     font-size: 11px;
                                                 }
                                             }
-                                            & .cardHeading{
+
+                                            & .cardHeading {
                                                 font-size: 15px;
                                             }
-                                            & .dateText{
+
+                                            & .dateText {
                                                 font-size: 12PX;
                                             }
-                                            & .paymentItems{
-                                                & .card-text{
-                                                font-size: 13PX;
-                                                }
-                                                & .itemsbtn{
+
+                                            & .paymentItems {
+                                                & .card-text {
                                                     font-size: 13PX;
                                                 }
-                                                
+
+                                                & .itemsbtn {
+                                                    font-size: 13PX;
+                                                }
+
                                             }
                                         }
                                     }
@@ -910,6 +1021,86 @@
 
                     & .checklebal {}
                 }
+            }
+        }
+    }
+    .bookingmodal {
+        & .modal-content {
+            & .modal-title {
+                font-size: 10px;
+    
+                & span {
+                    width: 10px;
+                    height: 10px;
+                
+    
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+    
+            & .buttonprnding {
+                font-size: 10px;
+    
+                & span {
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+    
+        & .modal-body {
+            & .card {
+                & .card-image {
+                    position: relative;
+    
+                    & img {}
+    
+                    & .saloontext {
+                        font-size: 12px;
+                    }
+                }
+    
+                & .card-body {
+                    & .icontext {
+                        font-size: 12px;
+    
+                        & span {
+                            display: flex;
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+    
+                    & .addarestext {
+                        font-size: 11px;
+    
+                        & span {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+    
+                & .bottomfooter {
+                    min-height: 200px;
+                    overflow-y: auto;
+                    height: 200px;
+                    border-radius: 10px;
+    
+                    & .Servicestext {
+                        font-size: 12px;
+                    }
+                }
+                & .footercard{
+                    border-radius: 0 0 10px 10px;
+                    & .offertext{
+                        font-size: 13px;
+                    }
+                }
+    
             }
         }
     }

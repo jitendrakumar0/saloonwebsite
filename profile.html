@@ -197,8 +197,8 @@
                                             <div class="row tabInnerRow">
                                                 <div class="col-md-10 mx-auto">
                                                     <a></a>
-                                                    <div class="card mb-3 border-0 shadow myBookingCard">
-                                                        <a class="text-decoration-none"href="#" data-bs-toggle="modal" data-bs-target="#myBooking">
+                                                    <div class="card mb-3 border-0 shadow myBookingCard" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                                        <!-- <a class="text-decoration-none" href="#" > -->
                                                             <div class="row g-0">
                                                                 <div class="col-md-4 leftSide">
                                                                     <div class="cardleftimage h-100 w-100">
@@ -221,7 +221,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </a>
+                                                        <!-- </a> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -877,23 +877,70 @@
 </div>
 <!-- my booking modal -->
 <!-- Modal -->
-<div class="modal fade" id="mybooking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="modal fade bookingmodal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-scrollable">
+        <div div class="modal-content">
+            <div class="modal-header d-flex align-items-center justify-content-between">
+                <h1 class="modal-title d-flex align-items-center" id="exampleModalLabel">Order Id : P167627403700 <span class=""><img class="w-100 h-100 ms-1" src="assets/img/profile/modalcopy.svg" alt="copy"></span></h1>
+                <div type="button" class="shadow-none buttonprnding d-flex align-items-center" data-bs-dismiss="modal" aria-label="Close">Pending<span><img class="w-100 h-100 ms-1" src="assets/img/profile/arrow.svg" alt=""></span></div>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card border-0 shadow position-relative">
+                            <div class="card-image w-100 ">
+                                <img class="w-100 h-100 rounded-3" src="assets/img/profile/imageprofile.png" alt="">
+                                <div class="saloontext">Kalon Unisex saloon</div>
+                            </div>
+                            <div class="card-body">
+                                <div class="icontext d-flex align-items-center gap-4 mb-3"><span><img class="w-100 h-100 me-3" src="assets/img/profile/calendar.svg" alt=""></span>Wed,Feb 15 | 10:30 AM</div>
+                                <div class="addarestext d-flex  gap-4 mb-3"><span><img class="w-100 h-100 me-3" src="assets/img/profile/geo-alt-fill.svg" alt=""></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempore a molestias saepe neque necessitatibus blanditiis quas, adipisci omnis, sit natus? Modi velit perspiciatis doloremque nihil excepturi maiores pariatur suscipit!</div>
+                                <div class="icontext "><a class="text-decoration-none d-flex align-items-center gap-4 mb-3 text-theme2" href="#"><span><img class="w-100 h-100 me-3" src="assets/img/profile/cursor.svg" alt=""></span>See direction</a></div>
+                                
+                            </div>
+                            <div class="bg-dark  px-3 py-3 bottomfooter">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="Servicestext text-theme1">Services</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="Servicestext text-white">Normal Manicure</div>
+                                    <div class="Servicestext text-white">₹ 300</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="Servicestext text-white">Sub-Total</div>
+                                    <div class="Servicestext text-white">₹ 300</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="Servicestext text-white">Discount</div>
+                                    <div class="Servicestext text-white">-₹0</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="Servicestext text-white">Booking Charge</div>
+                                    <div class="Servicestext text-success"><span class="text-decoration-line-through text-theme1 me-1">₹49</span>Free</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="Servicestext text-white">Booking Charge</div>
+                                    <div class="Servicestext text-success"><span class="text-decoration-line-through text-theme1 me-1">₹49</span>Free</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="Servicestext text-white">Booking Charge</div>
+                                    <div class="Servicestext text-success"><span class="text-decoration-line-through text-theme1 me-1">₹49</span>Free</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                    <div class="Servicestext text-white">Booking Charge</div>
+                                    <div class="Servicestext text-success"><span class="text-decoration-line-through text-theme1 me-1">₹49</span>Free</div>
+                                </div>
+                            </div>
+                            <div class="position-absolute bottom-0 py-3 bg-theme2 w-100 footercard">
+                                <div class="text-theme1 text-center offertext">Your Save ₹0 on this Order</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 <!-- Bootstrap Js -->
 <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Custom Js -->
