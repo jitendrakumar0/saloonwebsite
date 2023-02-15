@@ -28,24 +28,24 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- Dynamic Meta Tags (Should change for every page) -->
-    <title>SALOON | </title>
+    <title>SALOON | PROFILE</title>
     <!-- Required meta tags -->
-    <meta name="title" content="SALOON | LOGIN" />
+    <meta name="title" content="SALOON | PROFILE" />
     <meta name="discrption" content="Discrption here" />
     <meta name="keyword" content="Keyword here" />
     <!-- Twitter Meta -->
-    <meta name="twitter:title" content="SALOON | LOGIN">
+    <meta name="twitter:title" content="SALOON | PROFILE">
     <meta name="twitter:description" content="Discrption here">
     <meta name="twitter:image" content="assets/img/logo.png">
     <!-- Facebook Meta -->
     <meta property="og:url" content="">
-    <meta property="og:title" content="SALOON | LOGIN">
+    <meta property="og:title" content="SALOON | PROFILE">
     <meta property="og:description" content="Discrption here">
     <meta property="og:image" content="assets/img/logo/favicon-32x32.svg">
     <meta property="og:image:secure_url" content="assets/img/logo/favicon-32x32.svg">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.svg" />
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-32x32.svg" />
-    <meta name="classification" content="SALOON | LOGIN" />
+    <meta name="classification" content="SALOON | PROFILE" />
     <link rel="canonical" href="" />
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -55,10 +55,10 @@
 
 <body>
 <!-- Header Start -->
-<nav class="navbar navbar-expand-md navbar-dark bg-theme2 navbarhed" aria-label="Fourth navbar example">
+<nav class="navbar navbar-expand-md navbar-dark bg-theme2 navbarhed position-fixed w-100" aria-label="Fourth navbar example">
     <div class="container">
         <a class="navbar-brand logonav" href="index.html"><img src="assets/img/header/logo.svg" alt="logo"></a>
-        <button class="navbar-toggler togglrbtn" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler shadow-none togglrbtn" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -112,7 +112,456 @@
     </div>
 </nav>
 <!-- Header End -->
-
+<!-- Profile Page Start -->
+<section class="container-fluid profilepage py-5 bg-dark"> 
+        <div class="row">
+            <div class="col-12">
+                <div class="bannerMainBox position-relative bg-white mt-2">
+                    <div class="profileCoverImg  rounded-3">
+                        <img class="w-100 h-100" src="assets/img/profile/bussine1.png" alt="bussine1">
+                    </div>
+                    <div class="userProfileTxt">
+                        <div class="row align-items-center gap-0 gap-sm-0">
+                            <div class="col-auto colImg ms-sm-4 ps-sm-4">
+                                <div class="profileImage ms-auto  position-relative">
+                                    <img class="w-100" src="assets/img/profile/image-75.png" alt="image-75">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="fw-bold userName mb-3">Deepak Sahu</div>
+                            </div>
+                            <div class="col-auto gap-2 gap-sm-3 d-flex">
+                                <button type="button" class="btn border-0 editProfileBtn"data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <img class="w-100" src="assets/img/profile/image-131.png" alt="image-131">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 px-0 row mx-0">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 mt-3 mt-lg-4 h-md-100 leftSection">
+                    <div class="row ">
+                        <div class="col-12">
+                            <div class="bg-white userProfileSection overflow-hidden">
+                                <div class="d-flex align-items-start w-100">
+                                    <div class="nav flex-column nav-pills  navPill w-100" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <button class="nav-link nav-link border-0 rounded-0 ps-lg-4 ps-xl-5 navLink" id="v-pills-disabled-tab " data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>
+                                            <span> <span class="pe-3"><img src="assets/img/profile/at.svg" alt=""></span>deepaksahu.img@gmail.com</span>
+                                            <!-- <span>1</span> -->
+                                        </button>
+                                        <button class="nav-link nav-link border-0 rounded-0 ps-lg-4 ps-xl-5 navLink" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>
+                                            <span> <span class="pe-3"><img src="assets/img/profile/telephone.svg" alt=""></span>9079168958</span>
+                                            <!-- <span>1</span> -->
+                                        </button>
+                                        <button class="nav-link border-0 rounded-0 ps-lg-4 ps-xl-5 navLink navlink2 active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                            <span> <span class="pe-3"><img src="assets/img/profile/heart.svg" alt=""></span>My Booking</span>
+                                            <span>1</span>
+                                        </button>
+                                        <button class="nav-link border-0 rounded-0 ps-lg-4 ps-xl-5 navLink navlink2" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                            <span> <span class="pe-3"><img src="assets/img/profile/heart.svg" alt=""></span> My Wishlist</span>
+                                            <span>10</span>
+                                        </button>
+                                        <button class="nav-link border-0 rounded-0 ps-lg-4 ps-xl-5 navLink navlink2" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                            <span> <span class="pe-3"><img src="assets/img/profile/alarm.svg" alt=""></span> Saloon Points</span>
+                                            <span>100</span>
+                                        </button>
+                                        <button class="nav-link border-0 rounded-0 ps-lg-4 ps-xl-5 navLink navlink2" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                            <span> <span class="pe-3"><img src="assets/img/profile/user.svg" alt=""></span> Refer & Earn</span>
+                                            <span>0</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 mt-3 mt-lg-4 flex-fill h-100 rightSection">
+                    <div class="tab-content bg-white tabInnerR" id="v-pills-tabContent">
+                        <div class="tab-pane fade p-sm-4 p-3 tabsfirst show active " id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <div class="row innerrow">
+                                <div class="col-12 innercolcontent">
+                                    <ul class="nav nav-pills mb-3 innernavpill" id="pills-tab" role="tablist">
+                                        <li class="nav-item innerNavItem" role="presentation">
+                                            <button class="nav-link inerNavLink active" id="pills-saloon-tab" data-bs-toggle="pill" data-bs-target="#pills-saloon" type="button" role="tab" aria-controls="pills-saloon" aria-selected="true">Saloon</button>
+                                        </li>
+                                        <li class="nav-item innerNavItem" role="presentation">
+                                            <button class="nav-link inerNavLink" id="pills-saloonatHome-tab" data-bs-toggle="pill" data-bs-target="#pills-saloonatHome" type="button" role="tab" aria-controls="pills-saloonatHome" aria-selected="false">Saloon at Home</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content innertabContent" id="pills-tabContent">
+                                        <div class="tab-pane fade show p-sm-4 p-3 active" id="pills-saloon" role="tabpanel" aria-labelledby="pills-saloon-tab" tabindex="0">
+                                            <div class="row tabInnerRow">
+                                                <div class="col-md-10 mx-auto">
+                                                    <div class="card mb-3 border-0 shadow myBookingCard">
+                                                        <div class="row g-0">
+                                                            <div class="col-md-4 leftSide">
+                                                                <div class="cardleftimage h-100 w-100">
+                                                                    <img class="w-100 h-100 rounded-3" src="assets/img/profile/imageprofile.png" class="img-fluid rounded-start" alt="...">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 rightSide">
+                                                                <div class="card-body bodycard">
+                                                                    <div class="body-Header d-flex align-items-center justify-content-between ">
+                                                                        <div class="orderid text-theme2 mb-3">Order Id:P167627403700</div>
+                                                                        <div class="panding text-theme1 mb-3">Panding</div>
+                                                                    </div>
+                                                                    <div class="cardHeading my-2">Kalon Unisex saloon</div>
+                                                                    <p class="dateText mb-3"><img src="" alt=""> <span>Wed,Feb 15 | 10:30 AM</span></p>
+                                                                    <div class="d-flex align-items-center mb-3 gap-3 paymentItems">
+                                                                        <p class="card-text mb-0"><small class="text-theme2">300</small></p>
+                                                                        <button class="btn btn-theme1 text-white rounded-5 py-1 border-0 shadow-none itemsbtn">1 Items</button>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade p-sm-4 p-3" id="pills-saloonatHome" role="tabpanel" aria-labelledby="pills-saloonatHome-tab" tabindex="0">2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p-sm-4 p-3 tabSecond" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div class="row innerrowtab g-3">
+                                <div class="col-12">
+                                    <div class="card mb-3 border-0 shadow rounded-3 cardwishlist">
+                                        <div class="row g-0">
+                                            <div class="col-md-4 imageleft">
+                                                <div class="imagewishlistcard position-relative">
+                                                    <img class="w-100 h-100 rounded-2" src="assets/img/profile/imageprofile.png" class="img-fluid rounded-start" alt="...">
+                                                    <div class="position-absolute top-0 end-0 me-1 imagesvg">
+                                                        <div class="svgimage">
+                                                            <svg width="30px" height="40px" xmlns="http://www.w3.org/2000/svg">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                <path class="heart-stroke" style="fill: red;" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"></path>
+                                                                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="red"></path>
+                                                                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M2.314788,4 L7.00000086,0.251829715" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"></path>
+                                                                <path class="heart-lines" d="M27,12 L33,12" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M0,12 L6,12" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"></path>
+                                                                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 contentcardright">
+                                                <div class="card-body">
+                                                    <div class="text-theme1 saloon">Unisex</div>
+                                                    <div class="saloonname text-theme2">3 Star Unisex salon</div>
+                                                    <p class="card-text text-muted">Sec 110,</p>
+                                                    <div class="border-bottom bordermb"></div>
+                                                    <div class="footerimage d-flex align-items-center justify-content-between ">
+                                                        <ul class="d-flex align-items-center justify-content-start list-unstyled gap-3 listImage mb-0 ">
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/drink.png" alt="1"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Beverage"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/wifi.png" alt="2"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="WiFi"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/ac.png" alt="3"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="AC"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/TV-old.png" alt="4"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="TV"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/PARKING.png" alt="5"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Parking"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/ONLINE-PAYMENT.png" alt="6"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Card Payment"></li>
+                                                        </ul>
+                                                        <div class="distanceimage">
+                                                            <img class="h-100 w-100" src="assets/img/profile/km-icon.png" alt="km">
+                                                            <small class="text-black kmeeter"> 5 km</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 border-0 shadow rounded-3 cardwishlist">
+                                        <div class="row g-0">
+                                            <div class="col-md-4 imageleft">
+                                                <div class="imagewishlistcard position-relative">
+                                                    <img class="w-100 h-100 rounded-2" src="assets/img/profile/imageprofile.png" class="img-fluid rounded-start" alt="...">
+                                                    <div class="position-absolute top-0 end-0 me-1 imagesvg">
+                                                        <div class="svgimage">
+                                                            <svg width="30px" height="40px" xmlns="http://www.w3.org/2000/svg">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                <path class="heart-stroke" style="fill: red;" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"></path>
+                                                                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="red"></path>
+                                                                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M2.314788,4 L7.00000086,0.251829715" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"></path>
+                                                                <path class="heart-lines" d="M27,12 L33,12" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M0,12 L6,12" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"></path>
+                                                                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 contentcardright">
+                                                <div class="card-body">
+                                                    <div class="text-theme1 saloon">Unisex</div>
+                                                    <div class="saloonname text-theme2">3 Star Unisex salon</div>
+                                                    <p class="card-text text-muted">Sec 110,</p>
+                                                    <div class="border-bottom bordermb"></div>
+                                                    <div class="footerimage d-flex align-items-center justify-content-between ">
+                                                        <ul class="d-flex align-items-center justify-content-start list-unstyled gap-3 listImage mb-0 ">
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/drink.png" alt="1"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Beverage"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/wifi.png" alt="2"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="WiFi"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/ac.png" alt="3"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="AC"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/TV-old.png" alt="4"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="TV"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/PARKING.png" alt="5"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Parking"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/ONLINE-PAYMENT.png" alt="6"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Card Payment"></li>
+                                                        </ul>
+                                                        <div class="distanceimage">
+                                                            <img class="h-100 w-100" src="assets/img/profile/km-icon.png" alt="km">
+                                                            <small class="text-black kmeeter"> 5 km</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 border-0 shadow rounded-3 cardwishlist">
+                                        <div class="row g-0">
+                                            <div class="col-md-4 imageleft">
+                                                <div class="imagewishlistcard position-relative">
+                                                    <img class="w-100 h-100 rounded-2" src="assets/img/profile/imageprofile.png" class="img-fluid rounded-start" alt="...">
+                                                    <div class="position-absolute top-0 end-0 me-1 imagesvg">
+                                                        <div class="svgimage">
+                                                            <svg width="30px" height="40px" xmlns="http://www.w3.org/2000/svg">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                <path class="heart-stroke" style="fill: red;" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"></path>
+                                                                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="red"></path>
+                                                                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M2.314788,4 L7.00000086,0.251829715" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"></path>
+                                                                <path class="heart-lines" d="M27,12 L33,12" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M0,12 L6,12" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"></path>
+                                                                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 contentcardright">
+                                                <div class="card-body">
+                                                    <div class="text-theme1 saloon">Unisex</div>
+                                                    <div class="saloonname text-theme2">3 Star Unisex salon</div>
+                                                    <p class="card-text text-muted">Sec 110,</p>
+                                                    <div class="border-bottom bordermb"></div>
+                                                    <div class="footerimage d-flex align-items-center justify-content-between ">
+                                                        <ul class="d-flex align-items-center justify-content-start list-unstyled gap-3 listImage mb-0 ">
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/drink.png" alt="1"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Beverage"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/wifi.png" alt="2"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="WiFi"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/ac.png" alt="3"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="AC"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/TV-old.png" alt="4"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="TV"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/PARKING.png" alt="5"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Parking"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/ONLINE-PAYMENT.png" alt="6"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Card Payment"></li>
+                                                        </ul>
+                                                        <div class="distanceimage">
+                                                            <img class="h-100 w-100" src="assets/img/profile/km-icon.png" alt="km">
+                                                            <small class="text-black kmeeter"> 5 km</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 border-0 shadow rounded-3 cardwishlist">
+                                        <div class="row g-0">
+                                            <div class="col-md-4 imageleft">
+                                                <div class="imagewishlistcard position-relative">
+                                                    <img class="w-100 h-100 rounded-2" src="assets/img/profile/imageprofile.png" class="img-fluid rounded-start" alt="...">
+                                                    <div class="position-absolute top-0 end-0 me-1 imagesvg">
+                                                        <div class="svgimage">
+                                                            <svg width="30px" height="40px" xmlns="http://www.w3.org/2000/svg">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                <path class="heart-stroke" style="fill: red;" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"></path>
+                                                                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="red"></path>
+                                                                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M2.314788,4 L7.00000086,0.251829715" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"></path>
+                                                                <path class="heart-lines" d="M27,12 L33,12" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M0,12 L6,12" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"></path>
+                                                                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 contentcardright">
+                                                <div class="card-body">
+                                                    <div class="text-theme1 saloon">Unisex</div>
+                                                    <div class="saloonname text-theme2">3 Star Unisex salon</div>
+                                                    <p class="card-text text-muted">Sec 110,</p>
+                                                    <div class="border-bottom bordermb"></div>
+                                                    <div class="footerimage d-flex align-items-center justify-content-between ">
+                                                        <ul class="d-flex align-items-center justify-content-start list-unstyled gap-3 listImage mb-0 ">
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/drink.png" alt="1"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Beverage"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/wifi.png" alt="2"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="WiFi"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/ac.png" alt="3"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="AC"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/TV-old.png" alt="4"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="TV"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/PARKING.png" alt="5"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Parking"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/ONLINE-PAYMENT.png" alt="6"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Card Payment"></li>
+                                                        </ul>
+                                                        <div class="distanceimage">
+                                                            <img class="h-100 w-100" src="assets/img/profile/km-icon.png" alt="km">
+                                                            <small class="text-black kmeeter"> 5 km</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 border-0 shadow rounded-3 cardwishlist">
+                                        <div class="row g-0">
+                                            <div class="col-md-4 imageleft">
+                                                <div class="imagewishlistcard position-relative">
+                                                    <img class="w-100 h-100 rounded-2" src="assets/img/profile/imageprofile.png" class="img-fluid rounded-start" alt="...">
+                                                    <div class="position-absolute top-0 end-0 me-1 imagesvg">
+                                                        <div class="svgimage">
+                                                            <svg width="30px" height="40px" xmlns="http://www.w3.org/2000/svg">
+                                                                <g fill="none" fill-rule="evenodd">
+                                                                <path class="heart-stroke" style="fill: red;" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"></path>
+                                                                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="red"></path>
+                                                                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M2.314788,4 L7.00000086,0.251829715" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"></path>
+                                                                <path class="heart-lines" d="M27,12 L33,12" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M0,12 L6,12" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"></path>
+                                                                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="transprent" stroke-width="2" stroke-linecap="round"></path>
+                                                                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="transprent" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 contentcardright">
+                                                <div class="card-body">
+                                                    <div class="text-theme1 saloon">Unisex</div>
+                                                    <div class="saloonname text-theme2">3 Star Unisex salon</div>
+                                                    <p class="card-text text-muted">Sec 110,</p>
+                                                    <div class="border-bottom bordermb"></div>
+                                                    <div class="footerimage d-flex align-items-center justify-content-between ">
+                                                        <ul class="d-flex align-items-center justify-content-start list-unstyled gap-3 listImage mb-0 ">
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/drink.png" alt="1"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Beverage"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/wifi.png" alt="2"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="WiFi"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/ac.png" alt="3"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="AC"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/TV-old.png" alt="4"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="TV"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/PARKING.png" alt="5"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Parking"></li>
+                                                            <li><img class="w-100 h-100" src="assets/img/profile/ONLINE-PAYMENT.png" alt="6"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Card Payment"></li>
+                                                        </ul>
+                                                        <div class="distanceimage">
+                                                            <img class="h-100 w-100" src="assets/img/profile/km-icon.png" alt="km">
+                                                            <small class="text-black kmeeter"> 5 km</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p-sm-4 p-3 tabthird" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="heading mb-0">100</div>
+                                    <div class="headingSub">Total Available Saloon Points</div>
+                                    <div class="ponitext">Total Available Saloon Points</div>
+                                    <div class="paymenttext">You can use 50pts in one transaction on payment page during checkout</div>
+                                </div>
+                                <div class="col-12 d-none">
+                                    <nav class="innertabs py-3">
+                                        <div class="nav nav-tabs navTabsinner gap-3" id="nav-tab" role="tablist">
+                                            <button class="nav-link innerNavLink active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">all</button>
+                                            <button class="nav-link innerNavLink" id="nav-referrals-tab" data-bs-toggle="tab" data-bs-target="#nav-referrals" type="button" role="tab" aria-controls="nav-referrals" aria-selected="false">Referrals</button>
+                                            <button class="nav-link innerNavLink" id="nav-credited-tab" data-bs-toggle="tab" data-bs-target="#nav-credited" type="button" role="tab" aria-controls="nav-credited" aria-selected="false">Credited</button>
+                                            <button class="nav-link innerNavLink" id="nav-redeemed-tab" data-bs-toggle="tab" data-bs-target="#nav-redeemed" type="button" role="tab" aria-controls="nav-redeemed" aria-selected="false">Redeemed</button>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">Empty</div>
+                                        <div class="tab-pane fade" id="nav-referrals" role="tabpanel" aria-labelledby="nav-referrals-tab" tabindex="0">Empty</div>
+                                        <div class="tab-pane fade" id="nav-credited" role="tabpanel" aria-labelledby="nav-credited-tab" tabindex="0">Empty</div>
+                                        <div class="tab-pane fade" id="nav-redeemed" role="tabpanel" aria-labelledby="nav-redeemed-tab" tabindex="0">Empty</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 referEran py-3">
+                                    <div class="saloontext mb-3">Saloon Wallet Points</div>
+                                    <p class="saloonperograph">Saloon Points/Wallet Points are the points given in the user’s account that can be deemed during payment for appointment booking on Saloon Platform as per the outlined terms and conditions. Saloon Points have a validity period that is generally mentioned in Terms and Conditions and can differ as per Saloon's discretion. SALOON WEB SERVICES PRIVATE LIMITED reserves the right to update, amend, or cancel provision for Saloon Points for its users at any given point of time without any prior notice.</p>
+                                    <div class="saloonsubtext mb-3">Saloon Wallet Points</div>
+                                    <ul class="unlist">
+                                        <li>As a welcome bonus, Saloon provides 100 Points to the new users on app downloads.</li>
+                                        <li>1 Saloon Point is equivalent to Rs. 1. Thus, 100 Saloon Points is worth Rs. 100.</li>
+                                        <li>Users can redeem 50 Points for order value ranging from Rs. 99 to Rs. 499 and 100 Points on order value equal to or more than Rs. 500.</li>
+                                        <li>Saloon Points can't be cancelled or transferred to any other Saloon Wallet.</li>
+                                        <li>Saloon Points can't be transferred to any bank account or withdrawn to another in the form of cash.</li>
+                                    </ul>
+                                    <div class="saloontext mb-3">Use of Saloon Points in the event of Appointment Cancellations</div>
+                                    <ul class="unlist">
+                                        <li>When the customer cancels the appointment(s), the Saloon Points used for the transaction(s) (if any) will not be refunded.</li>
+                                        <li>When a Saloon Partner or Artist cancels the appointment(s), the Saloon Points used for the transaction(s) (if any) will be refunded to the customers, which they can reuse later.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p-sm-4 p-3 tabForth" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                            <div class="row mx-0 ">
+                                <div class="col-12 howitworks">
+                                    <div class="card mb-3 howitcard border-0 shadow">
+                                        <div class="row g-0">
+                                            <div class="col-md-4 leftSideContent">
+                                                <div class="text-center imagehow">
+                                                    <img  src="assets/img/profile/how-its-works.svg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 ightSideContent">
+                                                <div class="card-body flex-column align-items-cente justify-content-center d-flex h-100">
+                                                <h5 class="card-title">How it Works?</h5>
+                                                <p class="card-text">Share the referral code with your friends. Ensure that they download the app and enter this referral code.
+                                                    Check your points in your wallet. The more you refer, the more points you get.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card mb-3 refercard border-0 shadow">
+                                        <div class="row g-0">
+                                            <div class="col-md-4 d-flex align-items-cente justify-content-center flex-column leftSideContent">
+                                                <div class="text100">100</div>
+                                                <div class="textSubHeading text-center">Your Total Referral Earning</div>
+                                            </div>
+                                            <div class="col-md-8 rightSideContent">
+                                                <div class="card-body bodycard">
+                                                    <h5 class="card-title">Share Earn & Have Fun</h5>
+                                                    <p class="card-text">Get 50 Points for every person you refer to. Your friend will also get 100 points when they download the app</p>
+                                                    <p class="card-textsub"><small>You can use 50pts in one transaction on payment page during checkout</small></p>
+                                                    <div class="border-bottom bdbottom my-3"></div>
+                                                    <div class="sharetext"><small class="text-muted">Share your unique referral Code</small></div>
+                                                    <div class="copytext">
+                                                        <div class="copy-text">
+                                                            <input type="text" class="text" value="Q06730U" />
+                                                            <button class="position-absolute end-0 me-2"><img src="assets/img/profile/copyicon.svg" alt=""></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- Profile Page end -->
 <!-- herewe we Section start -->
 <section class="container-fluid wherWeSection bg-dark">
     <div class="container">
@@ -338,9 +787,94 @@
 
 </footer>
 <!-- Footer End -->
+<!-- modal edit -->
+<div class="modal fade editmodal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="userimagesection">
+                            <label for="formFile" class="form-label mb-0 w-100 h-100">
+                                <div class="image">
+                                    <img class="w-100 h-100" src="assets/img/profile/users.jpg" alt="user">
+                                </div> 
+                            </label>
+                            <input class="form-control " type="file" id="formFile" hidden>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="inputIconGroup d-flex align-items-center justify-content-start">
+                            <div class="icon"><img src="assets/img/profile/Icon feather-user.svg" alt="usericon"></div>
+                            <input class="form-cantrol inputform shadow-none py-2 border-0 border-bottom ms-2 w-100" type="text" name="name" value="Deepak sahu">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="inputIconGroup d-flex align-items-center justify-content-start">
+                            <div class="icon"><img src="assets/img/profile/Icon simple-email.svg" alt="@icon"></div>
+                            <input class="form-cantrol inputform shadow-none py-2 border-0 border-bottom ms-2 w-100" type="email" name="email" value="deepaksahu@gmail.com">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="inputIconGroup d-flex align-items-center justify-content-start">
+                            <div class="icon"><img src="assets/img/profile/phone.svg" alt="@icon"></div>
+                            <input class="form-cantrol inputform shadow-none py-2 border-0 border-bottom ms-2 w-100" type="tel" name="phone" value="9079168958">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="inputIconGroup d-flex align-items-center justify-content-start">
+                            <div class="icon "><img src="assets/img/profile/birthday.svg" alt="@icon"></div>
+                            <input class="form-cantrol inputform shadow-none py-2 border-0 border-bottom ms-2 w-100" type="date" name="birthday" >
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="inputIconGroup d-flex align-items-center">
+                            <div class="icon me-2">
+                                <img src="assets/img/profile/gander.svg" alt="">
+                            </div>
+                            <div class="d-flex align-items-cente">
+                                <div class="form-check px-4">
+                                    <input class="form-check-input checkinput shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label checklebal shadow-none" for="flexCheckDefault">Male
+                                    </label>
+                                </div>
+                                <div class="form-check ps-3">
+                                    <input class="form-check-input checkinput shadow-none" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label checklebal shadow-none" for="flexCheckChecked">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Bootstrap Js -->
 <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Custom Js -->
 <script src="assets/js/index.min.js"></script>
+<script>
+    let copyText = document.querySelector(".copy-text");
+copyText.querySelector("button").addEventListener("click", function () {
+	let input = copyText.querySelector("input.text");
+	input.select();
+	document.execCommand("copy");
+	copyText.classList.add("active");
+	window.getSelection().removeAllRanges();
+	setTimeout(function () {
+		copyText.classList.remove("active");
+	}, 2500);
+});
+
+</script>
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
 </body>
 </html>
