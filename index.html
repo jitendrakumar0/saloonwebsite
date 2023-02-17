@@ -57,7 +57,7 @@
 
 <body class="overflow-hideen ">
     <!-- Header Start -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-theme2 navbarhed" aria-label="Fourth navbar example">
+    <nav class="navbar navbar-expand-md navbar-dark bg-theme2 navbarhed position-fixed w-100" aria-label="Fourth navbar example">
         <div class="container">
             <a class="navbar-brand logonav" href="index.html"><img src="assets/img/header/logo.svg" alt="logo"></a>
             <button class="navbar-toggler togglrbtn" type="button" data-bs-toggle="collapse"
@@ -103,11 +103,139 @@
                         <a class="nav-link navlink" href="profile.html">Deepak</a>
                     </li>
                 </ul>
-                <form role="search" class="d-flex align-items-center searchsection">
+                <form role="search" class="d-flex align-items-center searchsection position-relative">
                     <input class="form-control searchinput" type="search" placeholder="Search" aria-label="Search">
                     <div class="loginIcon">
                         <a class="btn btnlogin" href="login.html"><img src="assets/img/header/person-fill.svg"
                                 alt="icon"></a>
+                    </div>
+                    <div class="card inputdropdown position-absolute">
+                        <ul class="nav nav-pills navPill mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item navItem w-50" role="presentation">
+                                <button class="nav-link navLink active w-100" id="pills-saloonH-tab" data-bs-toggle="pill" data-bs-target="#pills-saloonH" type="button" role="tab" aria-controls="pills-saloonH" aria-selected="true">Saloon</button>
+                            </li>
+                            <li class="nav-item navItem w-50" role="presentation">
+                                <button class="nav-link navLink w-100" id="pills-atHome-tab" data-bs-toggle="pill" data-bs-target="#pills-atHome" type="button" role="tab" aria-controls="pills-atHome" aria-selected="false">Saloon At Home</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-saloonH" role="tabpanel" aria-labelledby="pills-saloonH-tab" tabindex="0">
+                            <div class="row mx-0 innertabs pt-2">
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-atHome" role="tabpanel" aria-labelledby="pills-atHome-tab" tabindex="0">
+                            <div class="row mx-0 innertabs">
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <a class="buttoncontent text-decoration-none text-black" href="#">Haircut</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -435,7 +563,6 @@
             </div>
         </div>
     </section>
-
     <!-- Why Choose Saloon End ? -->
     <section class="container-fluid py-lg-5 bg-dark swipperSection">
         <div class="container">
