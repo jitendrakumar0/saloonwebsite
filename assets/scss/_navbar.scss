@@ -118,9 +118,10 @@
                 }
 
                 & .innertabs {
-                    
+
                     height: 160px;
                     overflow-y: auto;
+
                     & .buttoncontent {
                         background-color: transparent;
                         color: $black;
@@ -129,7 +130,8 @@
                         font-size: 13px;
                         margin-bottom: 5px;
                         border: 1px solid #0000005c;
-                        &:hover{
+
+                        &:hover {
                             background-color: #80808042;
                         }
                     }
@@ -142,6 +144,7 @@
                     opacity: 1;
                     visibility: visible;
                     top: 100%;
+                    margin-top: 10px;
                 }
             }
         }
