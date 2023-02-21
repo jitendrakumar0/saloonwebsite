@@ -91,5 +91,57 @@ footer {
         }
     }
 }
+.innerFooter {
+    & footer {
+        &.footer {
+            background-image: none;
+        }
+        & .columnfirst {
+            .linkTitle{
+                color: $gray-500;
+                font-weight: 300;
+            }
+            & .list1 {
+                & li {
+                    & a {
+                        &:hover {
+                        }
+                    }
+                }
+            }
+    
+            & .iconlist {
+                & li {
+                    & a {
+                        & img {
+                        }
+                        &:hover {
+                        }
+                    }
+                }
+            }
+            & .emailform {
+                & .inputemail {
+                    &:focus-visible{
+                    }
+                }
+                & .inputbtn {
+                }
+            }
+        }
+    
+        & .appiconsection {
+            & li {
+                & a {
+                    width: 220px;
+                    & img {}
+                }
+            }
+        }
+        .copyRightSection{
+            font-size: 14px;
+        }
+    }
+}
 
 @media only screen and (max-width: 1199.99px) {}
