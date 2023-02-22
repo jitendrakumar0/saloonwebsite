@@ -195,6 +195,26 @@ body{
         }
     }
 }
+
+.customTabs{
+    & .nav-item {
+        width: calc(100% / 3);
+        &:last-child{
+            border-right: none !important;
+        }
+        & .nav-link {
+            transition: ease-in-out .3s;
+            &.active {
+                background-color: $theme1 !important;
+            }
+        }
+    }
+}
+.customTabContent{
+    & .tab-pane{
+
+    }
+}
 // ********************Responsive****************
 @media only screen and (max-width: 1400px) { 
 }
@@ -323,6 +343,18 @@ body{
                 :hover {
                     & a {
                     }
+                }
+            }
+        }
+    }
+    .customTabs{
+        & .nav-item {
+            &:last-child{
+            }
+            & .nav-link {
+                font-size: 12px !important;
+                &.active {
+                    background-color: $theme1 !important;
                 }
             }
         }
