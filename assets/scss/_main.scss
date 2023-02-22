@@ -52,3 +52,279 @@ body{
 .lh-150 {
   line-height: 150%;
 }
+
+
+.pagination {
+  & .arrowIcon{
+      width: 30px;
+      height: 30px;
+  }
+  & > a {
+      font-size: 140%;
+  }
+  & a {
+      color: $gray-500;
+      font-size: 14px;
+      &:focus, &:hover {
+          color: $theme1;
+      }
+  }
+  & ul {
+      & li {
+          width: 30px;
+          height: 30px;
+          &.current {
+              background: rgba($theme1, .3);
+              & a{
+                  color: $theme1 !important;
+              }
+          }
+      }
+  }
+  & .disabled, & [hidden], & [disabled] {
+      opacity: .5;
+      pointer-events: none;
+  }
+}
+
+.breadcrumbMain{
+  top: 56px;
+  & .breadcrumb {
+      & .crumb {
+          cursor: pointer;
+          box-sizing: border-box;
+          height: 0;
+          margin-left: -15px;
+          padding: 5px;
+          padding-left: 20px;
+          line-height: 40px;
+          border-bottom: 15px solid $gray-600;
+          border-right: 15px solid transparent;
+          transition: ease-in-out .3s;
+          &:after, &:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              transition: .3s border-color linear;
+          }
+          &:after {
+              right: -15px;
+              top: 25px;
+              z-index: -1;
+              border-top: 15px solid $gray-600;
+              border-right: 15px solid transparent;
+          }
+          &:before {
+              top: 100%;
+              border-left: 15px solid #f7f7f7;
+              border-top: 15px solid transparent;
+              border-bottom: 15px solid transparent;
+          }
+          &:nth-child(1) {
+              z-index: 4;
+          }
+          &:nth-child(2) {
+              z-index: 3;
+          }
+          &:nth-child(3) {
+              z-index: 2;
+          }
+          &:nth-child(4) {
+              z-index: 1;
+          }
+          & a {
+              transition: ease-in-out .3s;
+          }
+          &.active {
+              border-bottom-color: $theme1;
+              &:hover {
+                  color: $white !important;
+              }
+              &:after {
+                  border-top-color: $theme1;
+              }
+          }
+          & span {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: -webkit-fill-available;
+            white-space: nowrap;
+            display: block;
+          }
+          :hover {
+              color: $theme1 !important;
+              & a {
+                  color: $theme1 !important;
+              }
+          }
+      }
+  }
+}
+.customAccordion{
+    & .accordion-item{
+        & .accordion-header {
+            & .accordion-button{
+                &:before, &:after {
+                    content: '';
+                    background-color: $white;
+                }
+                &:before {
+                    height: 0;
+                    width: 2px;
+                    position: absolute;
+                    right: 26px;
+                    transition: ease-in-out .3s;
+                }
+                &:after {
+                    background-image: none;
+                    width: 14px;
+                    height: 2px;
+                    transform: none;
+                }
+                &.collapsed{ 
+                    &:before {
+                        height: 14px;
+                    }
+                }
+            }
+        }
+        & .accordion-collapse {
+            & .accordion-body {
+                
+            }
+        }
+    }
+}
+// ********************Responsive****************
+@media only screen and (max-width: 1400px) { 
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1100px) {
+}
+@media only screen and (max-width: 991.98px) {
+}
+@media only screen and (max-width: 767.98px) {
+  .breadcrumbMain{
+      & .breadcrumb {
+          & .crumb {
+              font-size: 12px !important;
+              line-height: 34px;
+              border-width: 12px;
+              margin-left: -12px;            
+              &:after, &:before {
+              }
+              &:after {
+                  border-width: 12px;
+                  right: -12px;
+                  top: 22px;
+              }
+              &:before {
+                  border-width: 12px;
+              }
+              &.first-crumb {
+              }
+              &.middle-crumb {
+              }
+              &.last-crumb {
+              }
+              & a {
+              }
+              &.active {
+                  &:hover {
+                  }
+                  &:after {
+                  }
+              }
+              :hover {
+                  & a {
+                  }
+              }
+          }
+      }
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .pagination {
+      & .arrowIcon{
+          width: 24px;
+          height: 24px;
+          padding: 6px;
+      }
+      & > a {
+      }
+      & a {
+          font-size: 12px;
+          &:focus, &:hover {
+          }
+      }
+      & ul {
+          & li {
+              width: 24px;
+              height: 24px;
+              &.current {
+                  & a{
+                  }
+              }
+          }
+      }
+      & .disabled, & [hidden], & [disabled] {
+      }
+  }
+  .breadcrumbMain{
+    & .breadcrumb {
+        & .crumb {
+            &:after, &:before {
+            }
+            &:after {
+            }
+            &:before {
+            }
+            & a {
+            }
+            &.active {
+                &:hover {
+                }
+                &:after {
+                }
+            }
+            & span {
+                max-width: 140px;
+            }
+            :hover {
+                & a {
+                }
+            }
+        }
+    }
+}
+}
+@media (max-width: 360px) {
+    .breadcrumbMain{
+        & .breadcrumb {
+            & .crumb {
+                &:after, &:before {
+                }
+                &:after {
+                }
+                &:before {
+                }
+                & a {
+                }
+                &.active {
+                    &:hover {
+                    }
+                    &:after {
+                    }
+                }
+                & span {
+                    max-width: 70px;
+                }
+                :hover {
+                    & a {
+                    }
+                }
+            }
+        }
+    }
+}

@@ -26,3 +26,20 @@
     border-radius: 0 4px 4px 0 !important;
     z-index: 6 !important;
 }
+.bgiBtn1{
+    // &:after {
+    //     content: '';
+    //     display: block;
+    //     width: 150px;
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    // }
+}
+@media (max-width: 575.98px) {
+    
+.loginBtn {
+    font-size: 12px;
+}
+}
