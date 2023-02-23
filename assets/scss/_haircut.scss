@@ -179,39 +179,41 @@
 
 
 .modal{
-    & .modal-dialog{
-        max-width: 430px !important;
-        & .modal-content{
-            & .modal-header{
-                & .modal-title{
-                    font-size: 16px;
-                    font-weight: bold;
-                }
-                & .btn-close{
-                    font-size: 12px;
-                }
-            }
-            & .modal-body {
-                & .outer {
-                    border-color: $gray-100 !important;
-                    transition: ease-in-out .3s;
-                    & .imgOuter {
-                        width: 60px;
-                        height: 60px;
-                        & img {
-                            object-fit: cover;
-                            object-position: top center;
-                        }
-                    }
-                    & .packagename{
-                        font-size: 14px;
+    &.customModal {
+        & .modal-dialog{
+            max-width: 430px !important;
+            & .modal-content{
+                & .modal-header{
+                    & .modal-title{
+                        font-size: 16px;
                         font-weight: bold;
                     }
-                    & .packageDec {
+                    & .btn-close{
                         font-size: 12px;
                     }
-                    &:hover {
-                        box-shadow: 0 0.5rem 1rem rgba($dark, 0.15) !important;
+                }
+                & .modal-body {
+                    & .outer {
+                        border-color: $gray-100 !important;
+                        transition: ease-in-out .3s;
+                        & .imgOuter {
+                            width: 60px;
+                            height: 60px;
+                            & img {
+                                object-fit: cover;
+                                object-position: top center;
+                            }
+                        }
+                        & .packagename{
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        & .packageDec {
+                            font-size: 12px;
+                        }
+                        &:hover {
+                            box-shadow: 0 0.5rem 1rem rgba($dark, 0.15) !important;
+                        }
                     }
                 }
             }
@@ -439,30 +441,32 @@ nav {
         }
     }
     .modal{
-        & .modal-dialog{
-            & .modal-content{
-                & .modal-header{
-                    & .modal-title{
-                        font-size: 14px;
+        &.customModal {
+            & .modal-dialog{
+                & .modal-content{
+                    & .modal-header{
+                        & .modal-title{
+                            font-size: 14px;
+                        }
+                        & .btn-close{
+                        }
                     }
-                    & .btn-close{
-                    }
-                }
-                & .modal-body {
-                    & .outer {
-                        & .imgOuter {
-                            width: 50px;
-                            height: 50px;
-                            & img {
+                    & .modal-body {
+                        & .outer {
+                            & .imgOuter {
+                                width: 50px;
+                                height: 50px;
+                                & img {
+                                }
                             }
-                        }
-                        & .packagename{
-                            font-size: 12px;
-                        }
-                        & .packageDec {
-                            font-size: 10px;
-                        }
-                        &:hover {
+                            & .packagename{
+                                font-size: 12px;
+                            }
+                            & .packageDec {
+                                font-size: 10px;
+                            }
+                            &:hover {
+                            }
                         }
                     }
                 }

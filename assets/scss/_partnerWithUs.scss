@@ -64,37 +64,39 @@
 }
 
 .modal{
-    & .modal-dialog{
-        max-width: 430px !important;
-        margin: auto;
-        & .modal-content{
-            & .modal-header{
-                & .modal-title{
-                    font-size: 16px;
-                    font-weight: bold;
+    &.partnerLogin{
+        & .modal-dialog{
+            max-width: 430px !important;
+            margin: auto;
+            & .modal-content{
+                & .modal-header{
+                    & .modal-title{
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    & .btn-close{
+                        font-size: 12px;
+                        filter: invert(1);
+                    }
                 }
-                & .btn-close{
-                    font-size: 12px;
-                    filter: invert(1);
-                }
-            }
-            & .modal-body {
-                & .formOuter {
-                    & .loginOuter{
-                        & .loginHeader {
-                        }
-                        & form {
-                            &.form {
-                                & .input-group {
-                                    & .form-label {
-                                        font-size: 14px;
-                                    }
-                                    & .form-control {
-                                        font-size: 14px;
-                                        &::placeholder {
-                                            color: $gray-400;
-                                            font-weight: 300;
+                & .modal-body {
+                    & .formOuter {
+                        & .loginOuter{
+                            & .loginHeader {
+                            }
+                            & form {
+                                &.form {
+                                    & .input-group {
+                                        & .form-label {
                                             font-size: 14px;
+                                        }
+                                        & .form-control {
+                                            font-size: 14px;
+                                            &::placeholder {
+                                                color: $gray-400;
+                                                font-weight: 300;
+                                                font-size: 14px;
+                                            }
                                         }
                                     }
                                 }
@@ -142,28 +144,30 @@
         }
     }
     .modal{
-        & .modal-dialog{
-            & .modal-content{
-                & .modal-header{
-                    & .modal-title{
-                        font-size: 14px;
+        &.partnerLogin{
+            & .modal-dialog{
+                & .modal-content{
+                    & .modal-header{
+                        & .modal-title{
+                            font-size: 14px;
+                        }
+                        & .btn-close{
+                        }
                     }
-                    & .btn-close{
-                    }
-                }
-                & .modal-body {
-                    & .formOuter {
-                        & .loginOuter{
-                            & .loginHeader {
-                                font-size: 14px;
-                            }
-                            & form {
-                                &.form {
-                                    & .input-group {
-                                        & .form-label, & .form-control {
-                                            font-size: 12px;
-                                            &::placeholder {
+                    & .modal-body {
+                        & .formOuter {
+                            & .loginOuter{
+                                & .loginHeader {
+                                    font-size: 14px;
+                                }
+                                & form {
+                                    &.form {
+                                        & .input-group {
+                                            & .form-label, & .form-control {
                                                 font-size: 12px;
+                                                &::placeholder {
+                                                    font-size: 12px;
+                                                }
                                             }
                                         }
                                     }
