@@ -138,7 +138,9 @@ body{
           &.active {
               border-bottom-color: $theme1;
               &:hover {
-                  color: $white !important;
+                & span {
+                    color: $white !important;
+                }
               }
               &:after {
                   border-top-color: $theme1;
