@@ -41,7 +41,20 @@
                 font-weight: 600;
                 color: $theme1;
             }
-
+            & .heart {
+                & .form-check {
+                    & .form-check-input {
+                        &:checked{
+                            &~.form-check-label {
+                                & svg {
+                                    fill: $theme1 !important;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+              }
             & .saloonAddreas {
                 font-size: 14px;
                 font-weight: 400;
