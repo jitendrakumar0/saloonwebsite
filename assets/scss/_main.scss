@@ -217,6 +217,36 @@ body{
 
     }
 }
+
+
+.form-check {
+    &.myFavouriteBtn {
+        min-height: unset;
+        display: flex;
+        & .form-check-input {
+            &~.form-check-label {
+                cursor: pointer;
+                & svg {
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+                    filter: contrast(0);
+                    transition: ease-in-out .3s;
+                }
+            }
+            &:checked{
+                &~.form-check-label {
+                    & svg {
+                        filter: none;
+                        fill: $theme1 !important;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
 // ********************Responsive****************
 @media only screen and (max-width: 1400px) { 
 }

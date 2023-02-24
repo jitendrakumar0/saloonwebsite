@@ -1997,8 +1997,14 @@
       }
       & .logo-div {
         animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-        padding: 0 20px 0 20px;
+        // padding: 0 20px 0 20px;
         cursor: pointer;
+        width: 100px;
+        height: 56px;
+        & img {
+            object-fit: cover;
+            object-position: center;
+        }
         @keyframes fade-in {
           0% {
             opacity: 0;
