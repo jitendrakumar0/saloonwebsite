@@ -6,6 +6,7 @@
   @include TopBannerHeading-mixin-min-sm();
   @include contactUsCards-mixin-min-sm();
   @include contactFormMain-mixin-min-sm();
+  @include downloadMain-mixin-min-sm();
 }
 
 // Medium devices (tablets, 768px and up)
@@ -13,6 +14,7 @@
   @include TopBannerHeading-mixin-min-md();
   @include contactUsCards-mixin-min-md();
   @include contactFormMain-mixin-min-md();
+  @include downloadMain-mixin-min-md();
 }
 
 // Large devices (desktops, 992px and up)
@@ -20,6 +22,7 @@
   @include TopBannerHeading-mixin-min-lg();
   @include contactUsCards-mixin-min-lg();
   @include contactFormMain-mixin-min-lg();
+  @include downloadMain-mixin-min-lg();
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -27,6 +30,7 @@
   @include TopBannerHeading-mixin-min-xl();
   @include contactUsCards-mixin-min-xl();
   @include contactFormMain-mixin-min-xl();
+  @include downloadMain-mixin-min-xl();
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -34,6 +38,7 @@
   @include TopBannerHeading-mixin-min-xxl();
   @include contactUsCards-mixin-min-xxl();
   @include contactFormMain-mixin-min-xxl();
+  @include downloadMain-mixin-min-xxl();
 }
 
 // X-Large devices (large desktops, less than 1400px)
@@ -41,6 +46,7 @@
   @include TopBannerHeading-mixin-max-xl();
   @include contactUsCards-mixin-max-xl();
   @include contactFormMain-mixin-max-xl();
+  @include downloadMain-mixin-max-xl();
 }
 
 // Large devices (desktops, less than 1200px)
@@ -48,6 +54,7 @@
   @include TopBannerHeading-mixin-max-lg();
   @include contactUsCards-mixin-max-lg();
   @include contactFormMain-mixin-max-lg();
+  @include downloadMain-mixin-max-lg();
 }
 
 // Medium devices (tablets, less than 992px)
@@ -55,6 +62,7 @@
   @include TopBannerHeading-mixin-max-md();
   @include contactUsCards-mixin-max-md();
   @include contactFormMain-mixin-max-md();
+  @include downloadMain-mixin-max-md();
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -62,6 +70,7 @@
   @include TopBannerHeading-mixin-max-sm();
   @include contactUsCards-mixin-max-sm();
   @include contactFormMain-mixin-max-sm();
+  @include downloadMain-mixin-max-sm();
 }
 
 // X-Small devices (portrait phones, less than 576px)
@@ -69,6 +78,7 @@
   @include TopBannerHeading-mixin-max-xs();
   @include contactUsCards-mixin-max-xs();
   @include contactFormMain-mixin-max-xs();
+  @include downloadMain-mixin-max-xs();
 }
 
 // XX-Large devices (larger desktops)
