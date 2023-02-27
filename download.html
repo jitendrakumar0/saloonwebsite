@@ -549,7 +549,7 @@
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3 columnfirst">
                 <ul class="list-unstyled list1 d-flex align-items-cente justify-content-center gap-3 flex-column">
-                    <li><a class="text-decoration-none text-white" href="termsandConditions.html">Terms and Conditions</a></li>
+                    <li><a class="text-decoration-none text-white" href="terms-and-conditions.html">Terms and Conditions</a></li>
                     <li><a class="text-decoration-none text-white" href="cancellationRefund.html">Cancellation and Refund</a></li>
                     <li><a class="text-decoration-none text-white" href="privacyPolicy.html">Privacy Policy</a></li>
                     <li><a class="text-decoration-none text-white" href="cookiePolicy.html">Cookie Policy</a></li>
@@ -597,55 +597,9 @@
 </footer>
 <!-- Footer End -->
 
-<script>
-    if ("IntersectionObserver" in window) {
-  let counterObserver = new IntersectionObserver(function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        let counter = entry.target;
-        let target = parseInt(counter.innerText);
-        let step = target / 200;
-        let current = 0;
-        let timer = setInterval(function () {
-          current += step;
-          counter.innerText = Math.floor(current);
-          if (parseInt(counter.innerText) >= target) {
-            clearInterval(timer);
-          }
-        }, 10);
-        counterObserver.unobserve(counter);
-      }
-    });
-  });
-
-  let counters = document.querySelectorAll(".counter");
-  counters.forEach(function (counter) {
-    counterObserver.observe(counter);
-  });
-}
-</script>
-    <!-- Swiper - slider js -->
-    <script src="assets/libs/swiper-slider/swiper-bundle.min.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/index.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 5,
-            spaceBetween: 30,
-            keyboard: {
-                enabled: true,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
 </body>
 
 </html>
