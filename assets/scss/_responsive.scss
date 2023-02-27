@@ -10,6 +10,7 @@
   @include downloadMain-mixin-min-sm();
   @include headings-mixin-min-sm();
   @include treamConditionMain-mixin-min-sm();
+  @include cancellationRefundMain-mixin-min-sm();
   @include checkoutMain-mixin-min-sm();
 }
 
@@ -22,6 +23,7 @@
   @include downloadMain-mixin-min-md();
   @include headings-mixin-min-md();
   @include treamConditionMain-mixin-min-md();
+  @include cancellationRefundMain-mixin-min-md();
   @include checkoutMain-mixin-min-md();
 }
 
@@ -34,6 +36,7 @@
   @include downloadMain-mixin-min-lg();
   @include headings-mixin-min-lg();
   @include treamConditionMain-mixin-min-lg();
+  @include cancellationRefundMain-mixin-min-lg();
   @include checkoutMain-mixin-min-lg();
 }
 
@@ -46,6 +49,7 @@
   @include downloadMain-mixin-min-xl();
   @include headings-mixin-min-xl();
   @include treamConditionMain-mixin-min-xl();
+  @include cancellationRefundMain-mixin-min-xl();
   @include checkoutMain-mixin-min-xl();
 }
 
@@ -58,6 +62,7 @@
   @include downloadMain-mixin-min-xxl();
   @include headings-mixin-min-xxl();
   @include treamConditionMain-mixin-min-xxl();
+  @include cancellationRefundMain-mixin-min-xxl();
   @include checkoutMain-mixin-min-xxl();
 }
 
@@ -70,6 +75,7 @@
   @include downloadMain-mixin-max-xl();
   @include headings-mixin-max-xl();
   @include treamConditionMain-mixin-max-xl();
+  @include cancellationRefundMain-mixin-max-xl();
   @include checkoutMain-mixin-max-xl();
 }
 
@@ -82,6 +88,7 @@
   @include downloadMain-mixin-max-lg();
   @include headings-mixin-max-lg();
   @include treamConditionMain-mixin-max-lg();
+  @include cancellationRefundMain-mixin-max-lg();
   @include checkoutMain-mixin-max-lg();
 }
 
@@ -94,6 +101,7 @@
   @include downloadMain-mixin-max-md();
   @include headings-mixin-max-md();
   @include treamConditionMain-mixin-max-md();
+  @include cancellationRefundMain-mixin-max-md();
   @include checkoutMain-mixin-max-md();
 }
 
@@ -106,6 +114,7 @@
   @include downloadMain-mixin-max-sm();
   @include headings-mixin-max-sm();
   @include treamConditionMain-mixin-max-sm();
+  @include cancellationRefundMain-mixin-max-sm();
   @include checkoutMain-mixin-max-sm();
 }
 
@@ -118,6 +127,7 @@
   @include downloadMain-mixin-max-xs();
   @include headings-mixin-max-xs();
   @include treamConditionMain-mixin-max-xs();
+  @include cancellationRefundMain-mixin-max-xs();
   @include checkoutMain-mixin-max-xs();
 }
 
