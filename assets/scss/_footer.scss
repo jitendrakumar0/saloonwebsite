@@ -145,3 +145,17 @@ footer {
 }
 
 @media only screen and (max-width: 1199.99px) {}
+@media (max-width: 320px){
+    footer {    
+        & .emailform {
+            & .inputemail {
+                padding: 6px !important;
+                font-size: 12px !important;
+            }
+
+            & .inputbtn {
+                font-size: 12px !important;
+            }
+        }
+    }
+}
