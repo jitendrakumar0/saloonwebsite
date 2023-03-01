@@ -114,12 +114,27 @@
     }
 
     & .maincontainerleft {
-        top: 0;
-        transform: translate(50px, -40px);
+        left: 0;
+        right: 0;
+        top: 100px;
     }
 
 }
 
+.heroButton{
+    bottom: 50px;
+    & ul {
+        & .heroItems {
+            width: 25%;
+            & a {
+                transition: ease-in-out .3s;
+                &:hover {
+                    background-color: $theme1 !important;
+                }
+            }
+        }
+    }
+}
 .cardSection {
     & .heading {
         font-size: 22px;
@@ -545,8 +560,6 @@
         }
     
         & .maincontainerleft {
-            top: 0;
-            transform: translate(50px, -40px);
         }
     
     }
