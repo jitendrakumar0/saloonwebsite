@@ -40,7 +40,7 @@
                 height: 100px;
                 border-radius: 50%;
                 overflow: hidden;
-                border: 1px solid $theme1;
+                border: 2px solid $white;
                 margin-top: -3rem;
             }
 
@@ -518,9 +518,38 @@
                 height: 90px;
                 border-radius: 50%;
                 margin: auto;
-
-                & img {
-                    border-radius: 50%;
+                overflow: hidden;
+                & .form-label{
+                    cursor: pointer;
+                    & img {
+                        object-fit: cover;
+                        object-position: top center;
+                    }
+                    &:before {
+                        content: '';
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        opacity: 0;
+                        transition: ease-in-out .3s;
+                        background-color: rgba($dark, 0.5);
+                        border-radius: 50px;
+                        position: absolute;
+                        inset: 0;
+                        margin: auto;
+                        background-image: url(../img/icon/imageChange.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 25%;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    &:hover {
+                        &:before {
+                            opacity: 1;
+                        }
+                    }
                 }
             }
 
