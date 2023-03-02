@@ -162,6 +162,8 @@
                 left: 0;
                 visibility: hidden;
                 opacity: 0;
+                height: 320px;
+                max-height: 400px;
                 transition: all 0.4s ease-in-out;
 
                 & .navPill {
@@ -181,8 +183,8 @@
 
                 & .innertabs {
 
-                    height: 160px;
-                    overflow-y: auto;
+                    // height: 160px;
+                    // overflow-y: auto;
 
                     & .buttoncontent {
                         background-color: transparent;
@@ -195,6 +197,76 @@
 
                         &:hover {
                             background-color: #80808042;
+                        }
+                    }
+                }
+                & .searchResult {
+                    & .relatedSearch {
+                        & ul {
+                            & li {
+                                font-size: 14px;
+                                & a {
+                                    &:before, &:after {
+                                        content: '';
+                                        display: block;
+                                        background: transparent;
+                                        border-radius: 50px;
+                                        transition: ease-in-out .3s;
+                                    }
+                                    &:before {
+                                        width: 20px;
+                                        height: 20px;
+                                        border: 2px solid $theme1;
+                                    }
+                                    &:after {
+                                        width: 12px;
+                                        height: 12px;
+                                        position: absolute;
+                                        top: 4px;
+                                        left: 4px;
+                                    }
+                                    &:hover {
+                                        &:after {
+                                            background: $dark;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .vanues {
+                        & .title {
+                            &:after {
+                                content: '';
+                                display: block;
+                                width: -webkit-fill-available;
+                                height: 2px;
+                                background: $theme1;
+                            }
+                        }
+                        & .venueOuter {
+                            transition: ease-in-out .3s;
+                            & .imgOuter {
+                                width: 50px;
+                                height: 50px;
+                                & img {
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                            }
+                            & .venueDetai{
+                                & a {
+                                    transition: ease-in-out .3s;
+                                }
+                            }
+                            &:hover {
+                                border-color: $theme1 !important;
+                                & .venueDetai{
+                                    & a {
+                                        color: $theme1 !important;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
