@@ -10,19 +10,23 @@
             height: 100%;
         }
     }
-    & .searchOuter{
-        padding: 7px; 
+
+    & .searchOuter {
+        padding: 7px;
+
         & input {
             text-overflow: ellipsis;
             width: 100%;
             overflow: hidden;
             white-space: nowrap;
         }
-        & .currentLocation{
+
+        & .currentLocation {
             & a {
                 width: 16px;
                 height: 16px;
                 border: 1px solid $theme1;
+
                 &:before {
                     content: '';
                     width: 8px;
@@ -55,6 +59,7 @@
                     }
 
                     &:hover {}
+
                 }
 
                 & .dropdown2 {
@@ -104,10 +109,12 @@
                 }
             }
         }
-        & .hiddenDropdown{
+
+        & .hiddenDropdown {
             width: 100px;
             height: 44px;
             cursor: pointer;
+
             & .dropedownOuter {
                 top: 0;
                 width: 260px;
@@ -115,9 +122,11 @@
                 visibility: hidden;
                 transition: ease-in-out 0.3s;
                 margin-top: 10px;
-                & .inputGroup{
+
+                & .inputGroup {
                     & .form-control {
                         font-size: 12px;
+
                         &::placeholder {
                             font-size: 12px;
                             color: $gray-500;
@@ -125,20 +134,22 @@
                     }
                 }
             }
+
             &:hover {
                 & .dropedownOuter {
                     top: 100%;
                     opacity: 1;
                     visibility: visible;
-                    & .inputGroup{
+
+                    & .inputGroup {
                         & .form-control {
-                            &::placeholder {
-                            }
+                            &::placeholder {}
                         }
                     }
                 }
             }
         }
+
         & .searchsection {
             transition: all 0.5s ease-in-out;
 
@@ -200,24 +211,30 @@
                         }
                     }
                 }
+
                 & .searchResult {
                     & .relatedSearch {
                         & ul {
                             & li {
                                 font-size: 14px;
+
                                 & a {
-                                    &:before, &:after {
+
+                                    &:before,
+                                    &:after {
                                         content: '';
                                         display: block;
                                         background: transparent;
                                         border-radius: 50px;
                                         transition: ease-in-out .3s;
                                     }
+
                                     &:before {
                                         width: 20px;
                                         height: 20px;
                                         border: 2px solid $theme1;
                                     }
+
                                     &:after {
                                         width: 12px;
                                         height: 12px;
@@ -225,6 +242,7 @@
                                         top: 4px;
                                         left: 4px;
                                     }
+
                                     &:hover {
                                         &:after {
                                             background: $dark;
@@ -234,6 +252,7 @@
                             }
                         }
                     }
+
                     & .vanues {
                         & .title {
                             &:after {
@@ -244,24 +263,30 @@
                                 background: $theme1;
                             }
                         }
+
                         & .venueOuter {
                             transition: ease-in-out .3s;
+
                             & .imgOuter {
                                 width: 50px;
                                 height: 50px;
+
                                 & img {
                                     object-fit: cover;
                                     object-position: center;
                                 }
                             }
-                            & .venueDetai{
+
+                            & .venueDetai {
                                 & a {
                                     transition: ease-in-out .3s;
                                 }
                             }
+
                             &:hover {
                                 border-color: $theme1 !important;
-                                & .venueDetai{
+
+                                & .venueDetai {
                                     & a {
                                         color: $theme1 !important;
                                     }
@@ -285,359 +310,449 @@
     }
 }
 
+.cart {
+    & .card {
+        background-color: rgb(47, 45, 45);
+
+        & .cardimage {
+            width: 75px;
+            height: 75px;
+
+            & img {}
+        }
+
+        & .card-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        & .card-text {
+            font-size: 13px;
+        }
+
+        & .card-payment {
+            font-size: 14px;
+        }
+
+        & .itemscart {
+            background: #4c4848;
+            font-size: 12px;
+            border-radius: 20px;
+            padding: 6px 13px;
+            color: white;
+        }
+
+        & .buttoncard {
+            background: black;
+
+            & .cartbtn {
+                height: 100px;
+                width: 40px;
+
+                &:active {
+                    border: none !important;
+                    border-color: none;
+                }
+            }
+        }
+    }
+}
 
 // Small devices (landscape phones, 576px and up)
-@mixin navbarhed-mixin-min-sm() {
-}
+@mixin navbarhed-mixin-min-sm() {}
 
 // Medium devices (tablets, 768px and up)
-@mixin navbarhed-mixin-min-md() {
-}
+@mixin navbarhed-mixin-min-md() {}
 
 // Large devices (desktops, 992px and up)
-@mixin navbarhed-mixin-min-lg() {
-}
+@mixin navbarhed-mixin-min-lg() {}
 
 // X-Large devices (large desktops, 1200px and up)
-@mixin navbarhed-mixin-min-xl() {
-}
+@mixin navbarhed-mixin-min-xl() {}
 
 // XX-Large devices (larger desktops, 1400px and up)
-@mixin navbarhed-mixin-min-xxl() {
-}
+@mixin navbarhed-mixin-min-xxl() {}
 
 // X-Small devices (portrait phones, less than 576px)
 @mixin navbarhed-mixin-max-xs() {
     .navbarhed {
-    
+
         & .logonav {
-    
-            & img {
-            }
+
+            & img {}
         }
-        & .searchOuter{
+
+        & .searchOuter {
             width: 140px;
-            & input {
-            }
-            & .currentLocation{
+
+            & input {}
+
+            & .currentLocation {
                 & a {
-                    &:before {
-                    }
+                    &:before {}
                 }
             }
         }
+
         & .togglrbtn {}
+
         & .navcolapse {
             & .navullist {
                 & .navitem {
                     & .navlink {
                         &.droptoglee {
-                            &::after {
-                            }
+                            &::after {}
                         }
+
                         &:hover {}
                     }
+
                     & .dropdown2 {
+                        width: 100%;
+                        min-width: unset;
                         & .navPill {
                             & .naviteminner {
                                 & .navlinkinner {
-                                    &.active {
-                                    }
+                                    font-size: 13px;
+                                    &.active {}
                                 }
                             }
                         }
                     }
+
                     &:hover {
                         & .navlink {
-                            &::before {
-                            }
+                            &::before {}
                         }
                     }
                 }
             }
-            & .hiddenDropdown{
+
+            & .hiddenDropdown {
                 cursor: pointer;
+
                 & .dropedownOuter {
-                    & .inputGroup{
+                    & .inputGroup {
                         & .form-control {
-                            &::placeholder {
-                            }
+                            &::placeholder {}
                         }
                     }
                 }
+
                 &:hover {
                     & .dropedownOuter {
-                        & .inputGroup{
+                        & .inputGroup {
                             & .form-control {
-                                &::placeholder {
-                                }
+                                &::placeholder {}
                             }
                         }
                     }
                 }
             }
+
             & .searchsection {
                 & .searchinput {
-                    &:focus {
-                    }
+                    &:focus {}
                 }
-    
+
                 & .loginIcon {
                     & .btnlogin {
                         & img {}
                     }
                 }
+
                 & .inputdropdown {
                     & .navPill {
                         & .navItem {
                             & .navLink {
-                                &.active {
-                                }
+                                &.active {}
                             }
                         }
                     }
-    
+
                     & .innertabs {
                         & .buttoncontent {
-                            &:hover {
-                            }
+                            &:hover {}
                         }
                     }
-    
+
                 }
-    
+
                 &:hover {
-                    & .inputdropdown {
+                    & .inputdropdown {}
+                }
+            }
+        }
+    }
+
+    .cart {
+        & .card {
+
+            & .cardimage {
+                width: 60px;
+                height: 60px;
+
+                & img {}
+            }
+
+            & .card-title {
+                font-size: 13px;
+            }
+
+            & .card-text {
+                font-size: 11px;
+            }
+
+            & .card-payment {
+                font-size: 12px;
+            }
+
+            & .itemscart {
+                padding: 5px 10px;
+                font-size: 10px;
+            }
+
+            & .buttoncard {
+
+                & .cartbtn {
+                    height: 100px;
+                    width: 28px;
+                    padding: 0px 6px;
+
+                    &:active {
+                        border: none !important;
                     }
                 }
             }
         }
     }
+
 }
 
 // Small devices (landscape phones, less than 768px)
-@mixin navbarhed-mixin-max-sm() {
-}
+@mixin navbarhed-mixin-max-sm() {}
 
 // Medium devices (tablets, less than 992px)
 @mixin navbarhed-mixin-max-md() {
     .navbarhed {
-    
+
         & .logonav {
-    
-            & img {
-            }
+
+            & img {}
         }
-        & .searchOuter{
+
+        & .searchOuter {
             width: 240px;
-            & input {
-            }
-            & .currentLocation{
+
+            & input {}
+
+            & .currentLocation {
                 & a {
-                    &:before {
-                    }
+                    &:before {}
                 }
             }
         }
+
         & .togglrbtn {}
+
         & .navcolapse {
             & .navullist {
                 & .navitem {
                     & .navlink {
                         &.droptoglee {
-                            &::after {
-                            }
+                            &::after {}
                         }
+
                         &:hover {}
                     }
+
                     & .dropdown2 {
                         & .navPill {
                             & .naviteminner {
                                 & .navlinkinner {
-                                    &.active {
-                                    }
+                                    &.active {}
                                 }
                             }
                         }
                     }
+
                     &:hover {
                         & .navlink {
-                            &::before {
-                            }
+                            &::before {}
                         }
                     }
                 }
             }
-            & .hiddenDropdown{
+
+            & .hiddenDropdown {
                 cursor: pointer;
+
                 & .dropedownOuter {
-                    & .inputGroup{
+                    & .inputGroup {
                         & .form-control {
-                            &::placeholder {
-                            }
+                            &::placeholder {}
                         }
                     }
                 }
+
                 &:hover {
                     & .dropedownOuter {
-                        & .inputGroup{
+                        & .inputGroup {
                             & .form-control {
-                                &::placeholder {
-                                }
+                                &::placeholder {}
                             }
                         }
                     }
                 }
             }
+
             & .searchsection {
                 & .searchinput {
-                    &:focus {
-                    }
+                    &:focus {}
                 }
-    
+
                 & .loginIcon {
                     & .btnlogin {
                         & img {}
                     }
                 }
+
                 & .inputdropdown {
                     & .navPill {
                         & .navItem {
                             & .navLink {
-                                &.active {
-                                }
+                                &.active {}
                             }
                         }
                     }
-    
+
                     & .innertabs {
                         & .buttoncontent {
-                            &:hover {
-                            }
+                            &:hover {}
                         }
                     }
-    
+
                 }
-    
+
                 &:hover {
-                    & .inputdropdown {
-                    }
+                    & .inputdropdown {}
                 }
             }
         }
     }
-    
+
 }
 
 // Large devices (desktops, less than 1200px)
-@mixin navbarhed-mixin-max-lg() {
-}
+@mixin navbarhed-mixin-max-lg() {}
 
 // X-Large devices (large desktops, less than 1400px)
-@mixin navbarhed-mixin-max-xl() {
-}
+@mixin navbarhed-mixin-max-xl() {}
+
 @media (max-width: 360px) {
     .navbarhed {
-    
+
         & .logonav {
-    
-            & img {
-            }
+
+            & img {}
         }
-        & .searchOuter{
+
+        & .searchOuter {
             width: 80px !important;
-            & input {
-            }
-            & .currentLocation{
+
+            & input {}
+
+            & .currentLocation {
                 & a {
-                    &:before {
-                    }
+                    &:before {}
                 }
             }
         }
+
         & .togglrbtn {}
+
         & .navcolapse {
             & .navullist {
                 & .navitem {
                     & .navlink {
                         &.droptoglee {
-                            &::after {
-                            }
+                            &::after {}
                         }
+
                         &:hover {}
                     }
+
                     & .dropdown2 {
                         & .navPill {
                             & .naviteminner {
                                 & .navlinkinner {
-                                    &.active {
-                                    }
+                                    &.active {}
                                 }
                             }
                         }
                     }
+
                     &:hover {
                         & .navlink {
-                            &::before {
-                            }
+                            &::before {}
                         }
                     }
                 }
             }
-            & .hiddenDropdown{
+
+            & .hiddenDropdown {
                 cursor: pointer;
+
                 & .dropedownOuter {
-                    & .inputGroup{
+                    & .inputGroup {
                         & .form-control {
-                            &::placeholder {
-                            }
+                            &::placeholder {}
                         }
                     }
                 }
+
                 &:hover {
                     & .dropedownOuter {
-                        & .inputGroup{
+                        & .inputGroup {
                             & .form-control {
-                                &::placeholder {
-                                }
+                                &::placeholder {}
                             }
                         }
                     }
                 }
             }
+
             & .searchsection {
                 & .searchinput {
-                    &:focus {
-                    }
+                    &:focus {}
                 }
-    
+
                 & .loginIcon {
                     & .btnlogin {
                         & img {}
                     }
                 }
+
                 & .inputdropdown {
                     & .navPill {
                         & .navItem {
                             & .navLink {
-                                &.active {
-                                }
+                                &.active {}
                             }
                         }
                     }
-    
+
                     & .innertabs {
                         & .buttoncontent {
-                            &:hover {
-                            }
+                            &:hover {}
                         }
                     }
-    
+
                 }
-    
+
                 &:hover {
-                    & .inputdropdown {
-                    }
+                    & .inputdropdown {}
                 }
             }
         }
