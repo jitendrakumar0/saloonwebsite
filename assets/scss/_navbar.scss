@@ -208,7 +208,9 @@
                         padding: 7px 7px;
                         font-size: 12px;
                         height: 32px;
+                        cursor: pointer;
                         border: 1px solid #0000005c;
+                        transition: ease-in-out 0.3s;
 
                         &:hover {
                             border-color: $theme1;
