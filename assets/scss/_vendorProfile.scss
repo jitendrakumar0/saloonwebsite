@@ -346,7 +346,10 @@
                             border-radius: 50%;
                         }
                     }
-
+                    & .editReviewBtn {
+                        width: 24px;
+                        height: 24px;
+                    }
                     & .usernameDate {
                         & .commentusername {
                             font-size: 14px;
@@ -671,7 +674,62 @@
     }
 
 }
-
+.reviewModal {
+    & .modal-dialog {
+        & .modal-content {
+            & .modal-header {
+                & .modal-title{
+                    & .imgOuter {
+                        width: 36px;
+                        height: 36px;
+                        & img {
+                            object-fit: Cover;
+                            object-position: top center;
+                        }
+                    }
+                }
+            }
+            & .modal-body {
+                & .form {
+                    & .star-rating {
+                        display:flex;
+                        flex-direction: row-reverse;
+                        gap:1px;
+                        justify-content: start;
+                        & input {
+                            display:none;
+                        }
+                        & label {
+                            color:#ccc;
+                            cursor:pointer;
+                            height: 16px;
+                            transition: ease-in-out .3s;
+                        }
+                        & :checked ~ label {
+                            color:#f90 !important;
+                        }
+                        & label:hover, & label:hover ~ label {
+                            color:#fc0;
+                        }
+                    }
+                    & textarea {
+                        font-weight: 300;
+                        color: $dark;
+                        &:focus {
+                            border-color: $theme1;
+                        }
+                        &::placeholder {
+                            color: $gray-300;
+                        }
+                        &:focus-visible {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1399.99px) {
     .vendorProfile {
         & .section1 {
