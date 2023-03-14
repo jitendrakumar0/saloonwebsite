@@ -348,6 +348,7 @@
                 & .reviewcol {
                     max-height: 520px;
                     overflow: hidden auto;
+
                     & .reviewInnerRow {
                         & .userImage {
                             width: 50px;
@@ -421,11 +422,10 @@
 
                         & .likeunlikeGroup {
                             & .likebtn {
-                                border-right: 1px solid #d9e1e9;
 
                                 & svg {}
 
-                                & span {
+                                & .textspan {
                                     font-size: 14px;
                                     color: gray;
                                 }
@@ -445,6 +445,56 @@
 
                                 &:active {
                                     border-color: transparent;
+                                }
+                            }
+
+                            &.wrapper {
+                                & .radio_group {
+                                    width: 45px;
+                                    position: relative;
+                                    display: flex;
+                                    align-items: center;
+                                    transition: all 0.3s ease-in-out;
+                                    & svg{
+                                        width: 70px;
+                                        filter: brightness(0);
+                                        opacity: 0.5;
+                                    }
+
+                                    & input[type="radio"] {
+                                        opacity: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: 0px;
+                                        margin: 0;
+                                        padding: 0;
+                                        z-index: 1;
+                                        cursor: pointer;
+                                    }
+
+                                    & input[type="radio"]+label {
+                                        color: #95a5a6;
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        transform: scale(1);
+                                        align-items: center;
+                                        gap: 0.6rem;
+                                    }
+
+                                    & .ratingtype {
+                                        display: flex;
+                                        align-items: center;
+                                        font-size: 15px;
+                                    }
+
+                                    & input[type="radio"]:checked+label svg  {
+                                       filter: brightness(1);
+                                        opacity: 1;
+                                        transform: scale(1.1);
+                                    }
                                 }
                             }
                         }
@@ -758,6 +808,33 @@
             }
         }
     }
+    
+}
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1px;
+    justify-content: start;
+
+    & input {
+        display: none;
+    }
+
+    & label {
+        color: #ccc;
+        cursor: pointer;
+        height: 16px;
+        transition: ease-in-out .3s;
+    }
+
+    & :checked~label {
+        color: #f90 !important;
+    }
+
+    & label:hover,
+    & label:hover~label {
+        color: #fc0;
+    }
 }
 
 @media only screen and (max-width: 1399.99px) {
@@ -985,7 +1062,7 @@
 
                                     & svg {}
 
-                                    & span {}
+                                    & .textspan {}
 
                                     &:active {}
                                 }
@@ -1408,7 +1485,7 @@
 
                                     & svg {}
 
-                                    & span {}
+                                    & .textspan {}
 
                                     &:active {}
                                 }
@@ -1878,7 +1955,7 @@
 
                                     & svg {}
 
-                                    & span {}
+                                    & .textspan {}
 
                                     &:active {}
                                 }
@@ -2369,7 +2446,7 @@
 
                                     & svg {}
 
-                                    & span {
+                                    & .textspan {
                                         font-size: 11px;
                                     }
 
